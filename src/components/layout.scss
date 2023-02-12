@@ -28,14 +28,17 @@
     --size-gap: var(--space-6);
   }
   html {
+    height: 100%;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
     font: sans-serif;
     font-size: var(--font-md);
     line-height: var(--line-height-normal);
-    overflow-y: scroll;
+    //overflow-y: scroll;
+    overflow-x: hidden;
   }
   body {
+    height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: var(--color-text);
@@ -226,26 +229,270 @@
   }
 
   .main-wrapper{
+    //position: fixed;
     width: 100%;
     height: 100vh;
     background-color: black;
+    @include xs{
+        
+    };
+    @include lg{
+       
+    };
   }
   
   .nav{
+    position: fixed;
+    display: flex;
     width: 100%;
     height: 10%;
-    border: thin solid green;
-    z-index: 2;
+    background-color: black;
+    z-index: 20;
   }
 
   .main-container{
     z-index: 1;
     width: 100%;
     height: 100%;
-    margin-top: -10vh;
+    //margin-top: -10vh;
     background-color: orange;
+    @include xs{
+        overflow-x: hidden;
+    };
+    @include lg{
+        overflow: hidden;
+    };
+  }
+
+  .section-double{
+    @include xs{
+        height: 200%;
+        width: 100%;
+        margin-bottom: 300%;
+    };
+    @include lg{
+        height: 100%;
+        width: 200%;
+        margin-bottom: 0%;
+        display: flex;
+    };
+    
+  }
+
+  .inner-section{
+    @include xs{
+        width: 100%;
+        height: 50%;
+    };
+    @include lg{
+        width: 100%;
+        height: 100%;
+    };
+    
+  }
+
+  .section{
+    height: 90vh;
   }
 
   .hero-wrapper{
-    
+    background-color: #7026b9;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    @include xs{
+        flex-direction: column;
+    }
+    @include lg{
+        flex-direction: row;
+    }
+  }
+
+  .hero-content{
+    border: thin solid green;
+    @include xs{
+        width: 100%;
+        height: 67.5%;
+    }
+    @include lg{
+        width: 60%;
+        height: 100%;
+    }
+  }
+
+  .hero-scrollers{
+    border: thick solid pink;
+    @include xs{
+        width: 100%;
+        height: 25%;
+    };
+    @include lg{
+        display: flex;
+        width: 40%;
+        height: 100%;
+    };
+  }
+
+  .scroller-container{
+    @include xs{
+        width: 1200%;
+        height: 100%;
+    };
+    @include lg{
+        width: 50%;
+        height: 600%;
+    };
+  }
+
+  .scroller-inner-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    @include xs{
+        flex-direction: row;
+    };
+    @include lg{
+        flex-direction: column;
+    };
+    //outline: thick solid blue;
+  }
+
+  .scroller-reel{
+    outline: medium dotted red;
+    display: flex;
+    @include xs{
+        flex-direction: row;
+        width: 33%;
+        height: 100%;
+        background: linear-gradient(to left, green, blue, green)
+    };
+    @include lg{
+        flex-direction: column;
+        width: 100%;
+        height: 33%;
+        background: linear-gradient(to bottom, green, blue, green)
+    };
+  }
+
+  .reel0{
+    @include xs{
+        transform: translateX(-300%)
+    };
+    @include lg{
+        transform: translateY(-300%)
+    };
+  }
+
+  .reel-node{
+    border: thin solid yellow;
+    @include xs{
+        width: 20%;
+        height: 100%;
+    };
+    @include lg{
+        width: 100%;
+        height: 100%;
+    };
+  }
+
+  .node-image-container{
+    width: 95%;
+    height: 95%;
+    //margin: 2.5%;
+    border: thin solid red;
+    @include xs{
+        margin: 2.5%;
+    };
+    @include lg{
+        margin: 2.5%;
+    };
+  }
+
+  .about-section{
+    @include xs{
+        width: 100%;
+        height: 200%;
+    };
+    @include lg{
+        width: 100%;
+        height: 100%;
+    };
+}
+
+  .about-wrapper{
+    background-color: red;
+    @include xs{
+        width: 100%;
+        height: 100%;
+    };
+    @include lg{
+        width: 100%;
+        height: 100%;
+    };
+  }
+
+  .about-content{
+    width: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, aqua, transparent);
+  }
+
+  .spaces-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border: thin solid green;
+  }
+
+  .hidden-xs{
+    @include xs{
+        display: none;
+    };
+    @include lg{
+        display: flex;
+        width: 20vw;
+        height: 100%;
+    };
+  }
+
+  .hidden-xs > .scroller-container{
+    width: 100%;
+    height: 600%;
+  }
+
+  .hidden-lg{
+    @include xs{
+        display: block;
+    };
+    @include lg{
+        display: none;
+    };
+  }
+
+  .utility{
+    width: 0;
+    margin: 0;
+  }
+
+  .card{
+    @include xs{
+        position: sticky;
+        top: 10%;
+    };
+    @include lg{
+        position: static;
+        top: 0%;
+    };
+  }
+
+  .loc-scroll{
+    height: 25vh;
+  }
+
+  .section-rest{
+    width: 100%;
+    height: auto;
   }
