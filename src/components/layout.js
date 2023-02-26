@@ -8,6 +8,7 @@ import "./layout.css"
 import Hero from "./Hero"
 import About from "./About"
 import Spaces from "./Spaces"
+import Events from "./Events"
 import LocalScroller from "./LocalScroller"
 
 
@@ -26,6 +27,8 @@ const Layout = ({ children }) => {
   useEffect(() => {
 	let mm = gsap.matchMedia();
 
+
+
 	//scroll-trigger
 	let tl = gsap.timeline({
 		scrollTrigger: {
@@ -33,31 +36,37 @@ const Layout = ({ children }) => {
 			pin: true,
 			snap: "labels",
 			scrub: true,
-			end: "+=600%",
+			end: "+=1000%",
 		}
 	});
 
 	
 	mm.add(" (min-width: 721px)", () => {
 		tl.to(".section-double", { xPercent: -40 })
-		tl.to(".section-rest", { yPercent: -100 })
+		tl.to(".test2", { yPercent: -100 })
+		tl.to(".test3", { yPercent: -200 })
+		tl.to(".card1", { yPercent: -100 })
+		tl.to(".card2", { yPercent: -200 })
+		tl.to(".events-list", { yPercent: -300 })
 	})
 
-	//mobile scroll-trigger animation
-	mm.add(" (max-width: 720px)", () => {
-		//tl.to(".about", { yPercent: -20 })
-		//tl.to(".section-rest", { yPercent: -100 })
-	})
+// 	//mobile scroll-trigger animation
+// 	mm.add(" (max-width: 720px)", () => {
+// 		//tl.to(".about", { yPercent: -20 })
+// 		//tl.to(".section-rest", { yPercent: -100 })
+// 	})
 
-	
-
-
-  });
+	// let ctaButton = document.getElementById("nav-itm")
+	// ctaButton.addEventListener('click', function(e) {
+	// 	window.scrollTo(0, 700)
+	// 	//alert("clicked")
+	// })
+   });
 
   return (
     <div className="main-wrapper">
 		<nav className="nav">
-			<p>nav</p>
+			<p id="nav-itm">nav</p>
 			<p>nav</p>
 			<p>nav</p>
 		</nav>
@@ -68,18 +77,18 @@ const Layout = ({ children }) => {
 				</section>
 				<section className="about-section about">
 					<div className="loc-scroll hidden-lg card">
-						<LocalScroller direction={"33.3%"} uniqueId="second" className="scrolltray" timescalespeed={9} />
+						<LocalScroller direction={"33.3%"} uniqueId="second" imgSource="spaces" className="scrolltray" timescalespeed={9} />
 					</div>
 					<About />
 				</section>
 				
 			</section>
 			<section className="section-rest card">
-				<div className="section card">
+				<div className="section card card1">
 					<Spaces />
 				</div>
-				<div className="section card">
-					<Spaces />
+				<div className="section card card2">
+					<Events />
 				</div>
 			</section>
 		</div>
