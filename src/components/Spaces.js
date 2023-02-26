@@ -129,7 +129,7 @@ export default function Spaces() {
             <div className='spaces-container'>
                 <div className='spaces-main-text'>
                     <p className='spaces-heading'>Spaces</p>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p> CAVIC provides an array of spaces, including co-working spaces, event spaces, a conference room, and a fully equipped photo studio</p>
                     {/* <button onClick={() => {nextElements()}}> next </button> */}
                     <div className='spaces-list list-top' onClick={() => {readMore("gallery")}}>
                         Gallery/Exhibition Space
@@ -146,6 +146,9 @@ export default function Spaces() {
                     <div className='spaces-list' onClick={() => {readMore("studio")}}>
                         Studio Space
                     </div>
+                    <div className='spaces-list' onClick={() => {readMore("private")}}>
+                        Private Offices
+                    </div>
                     <div className='spaces-list' onClick={() => {readMore("coworking")}}>
                         Co-Working Space
                     </div>
@@ -157,29 +160,37 @@ export default function Spaces() {
                 <div className='spaces-scroller'>
                     <div className="spaces-scroller-inner" data-mouse-down-at="0" data-prev-percentage="0">
                         <div className='space-space'></div>
-                        <div className='space-card' onClick={() => {readMore("gallery")}}>
+                        <div className='space-card'>
                             <img src={SpacesContent.pics1} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Gallery Space</p>
                         </div>
-                        <div className='space-card'onClick={() => {readMore("dedicated")}}>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics8} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("dedicated")}}>Dedicated Desk Space</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics10} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Conference Room</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics6} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("training")}}>Training Space</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics5} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("studio")}}>Studio Space</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics4} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("private")}}>Private Offices</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics3} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("coworking")}}>CoWorking Space</p>
+                        </div>
+                        <div className='space-card'>
                             <img src={SpacesContent.pics2} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("conference")}}>
-                            <img src={SpacesContent.pics1} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("training")}}>
-                            <img src={SpacesContent.pics2} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("studio")}}>
-                            <img src={SpacesContent.pics1} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("private")}}>
-                            <img src={SpacesContent.pics2} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("coworking")}}>
-                            <img src={SpacesContent.pics1} className='space-card-image' draggable="false"></img>
-                        </div>
-                        <div className='space-card' onClick={() => {readMore("chill")}}>
-                            <img src={SpacesContent.pics2} className='space-card-image' draggable="false"></img>
+                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Chill Space</p>
                         </div>
                         <div className='space-space'></div>
                     </div>

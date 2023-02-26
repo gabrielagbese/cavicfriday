@@ -23,9 +23,9 @@ export default function Hero() {
           </div>
         </div>
         <div className='hero-scrollers'>
-            <LocalScroller direction={"-33.3%"} uniqueId="first" imgSource="events" className="scrolltray"/>
+            <LocalScroller direction={"-33.3%"} uniqueId="first" imgSource="spaces" className="scrolltray"/>
             <div className='hidden-xs'>
-              <LocalScroller direction={"33.3%"} uniqueId="second" imgSource="spaces" className="scrolltray"/>
+              <LocalScroller direction={"33.3%"} uniqueId="second" imgSource="events" className="scrolltray"/>
             </div>
         </div>
     </div>

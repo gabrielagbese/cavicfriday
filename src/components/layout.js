@@ -43,8 +43,8 @@ const Layout = ({ children }) => {
 	
 	mm.add(" (min-width: 721px)", () => {
 		tl.to(".section-double", { xPercent: -40 })
-		tl.to(".test2", { yPercent: -100 })
-		tl.to(".test3", { yPercent: -200 })
+		tl.to(".test2", { yPercent: -101 })
+		// tl.to(".test3", { yPercent: -200 })
 		tl.to(".card1", { yPercent: -100 })
 		tl.to(".card2", { yPercent: -200 })
 		tl.to(".events-list", { yPercent: -300 })
@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
 				</section>
 				<section className="about-section about">
 					<div className="loc-scroll hidden-lg card">
-						<LocalScroller direction={"33.3%"} uniqueId="second" imgSource="spaces" className="scrolltray" timescalespeed={9} />
+						<LocalScroller direction={"33.3%"} uniqueId="second" imgSource="events" className="scrolltray" timescalespeed={9} />
 					</div>
 					<About />
 				</section>
