@@ -917,6 +917,13 @@
     padding: 1%;
   }
 
+  .event-text{
+    color: white;
+    font-size: 1.25rem;
+    padding: 3%;
+    margin-top: -5%;
+  }
+
   .upcoming-title{
     color: white;
     font-size: 1.5rem;
@@ -926,7 +933,7 @@
 
   .upcoming-event{
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-left: 5%;
     margin-top: -5%;
   }
@@ -940,8 +947,8 @@
 
   .calendar{
     padding: 2%;
-    width: 90%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
     //border: thin solid orange;
     @include xs{
      display: none
