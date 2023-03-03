@@ -1178,6 +1178,12 @@ pre tt:after {
   }
 }
 
+.events-name {
+  color: darkorange;
+  font-size: 4rem;
+  padding: 1%;
+}
+
 .events-side {
   background-color: #323232;
 }

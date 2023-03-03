@@ -4,7 +4,7 @@ export default function Events() {
   return (
     <div className='events-wrapper'>
         <div className='events-side'>
-          <p> Events</p>
+          <p className='events-name'> Events</p>
         </div>
         <div className='events-list'>
             <div className='event-item'>1</div>
