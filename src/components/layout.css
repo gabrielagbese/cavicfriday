@@ -465,6 +465,7 @@ pre tt:after {
     font-size: 3em;
     font-weight: 600;
     text-align: left;
+    margin-top: -15%;
   }
 }
 
@@ -480,7 +481,8 @@ pre tt:after {
 @media (min-width: 0px) {
   .hero-writeup {
     font-size: 0.85em;
-    text-align: center;
+    text-align: start;
+    margin-top: -50%;
   }
 }
 
@@ -1178,38 +1180,92 @@ pre tt:after {
   }
 }
 
-.events-name {
-  color: darkorange;
-  font-size: 4rem;
-  padding: 1%;
+@media (min-width: 0px) {
+  .events-name {
+    color: darkorange;
+    font-size: 2rem;
+    padding: 1%;
+  }
 }
 
-.event-text {
-  color: white;
-  font-size: 1.25rem;
-  padding: 3%;
-  margin-top: -5%;
+@media (min-width: 960px) {
+  .events-name {
+    color: darkorange;
+    font-size: 4rem;
+    padding: 1%;
+  }
 }
 
-.upcoming-title {
-  color: white;
-  font-size: 1.5rem;
-  padding: 3%;
-  margin-top: -5%;
+@media (min-width: 0px) {
+  .event-text {
+    color: white;
+    font-size: 0.85rem;
+    padding: 3%;
+    margin-top: -10%;
+  }
 }
 
-.upcoming-event {
-  color: white;
-  font-size: 2.5rem;
-  padding-left: 5%;
-  margin-top: -5%;
+@media (min-width: 960px) {
+  .event-text {
+    color: white;
+    font-size: 1.25rem;
+    padding: 3%;
+    margin-top: -5%;
+  }
 }
 
-.upcoming-date {
-  color: white;
-  font-size: 1.75rem;
-  margin-top: -5%;
-  padding-left: 5%;
+@media (min-width: 0px) {
+  .upcoming-title {
+    color: white;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 960px) {
+  .upcoming-title {
+    color: white;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: 0px) {
+  .upcoming-event {
+    color: white;
+    font-size: 1.75rem;
+    padding-left: 5%;
+    margin-top: -11%;
+  }
+}
+
+@media (min-width: 960px) {
+  .upcoming-event {
+    color: white;
+    font-size: 2.5rem;
+    padding-left: 5%;
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: 0px) {
+  .upcoming-date {
+    color: white;
+    font-size: 1rem;
+    margin-top: -8.5%;
+    padding-left: 5%;
+  }
+}
+
+@media (min-width: 960px) {
+  .upcoming-date {
+    color: white;
+    font-size: 1rem;
+    margin-top: -15%;
+    padding-left: 5%;
+  }
 }
 
 .calendar {
