@@ -917,6 +917,40 @@
     padding: 1%;
   }
 
+  .upcoming-title{
+    color: white;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-top: -5%;
+  }
+
+  .upcoming-event{
+    color: white;
+    font-size: 3rem;
+    padding-left: 5%;
+    margin-top: -5%;
+  }
+
+  .upcoming-date{
+    color: white;
+    font-size: 1.75rem;
+    margin-top: -5%;
+    padding-left: 5%;
+  }
+
+  .calendar{
+    padding: 2%;
+    width: 90%;
+    height: 50%;
+    //border: thin solid orange;
+    @include xs{
+     display: none
+    };
+    @include lg{
+     display: block;
+    };
+  }
+
   .events-side{
     background-color: #323232;
     
