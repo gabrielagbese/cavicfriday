@@ -111,12 +111,12 @@ export default function Spaces() {
 
             track.animate({
                 transform: `translate(${nextPercentage}%, 0%)`
-              }, { duration: 1200, fill: "forwards" });
+              }, { duration: 900, fill: "forwards" });
 
             for(const image of track.getElementsByClassName("space-card-image")) {
                 image.animate({
                   objectPosition: `${100 + nextPercentage/5}% center`
-                }, { duration: 1200, fill: "forwards" });
+                }, { duration: 900, fill: "forwards" });
               }
 
             

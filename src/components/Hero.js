@@ -16,7 +16,7 @@ export default function Hero() {
     <div className='hero-wrapper'>
         <div className='hero-content'>
           <div className='hero-inner-content'>
-            <p className='hero-hello'>Welcome to the</p>
+            {/* <p className='hero-hello'>Welcome to the</p> */}
             <p className='hero-name'>Creative Arts & Visual Imagery Centre</p>
             <p className='hero-writeup'>A creative hub that provides creatives with access to facilities to enable them pick up new skills, make them more visible and help them generate wealth in the creative ecosystem of Africa</p>
             {/* <button className='cta' onClick={() => {ctaScroll()}}>Learn More</button> */}

@@ -30,7 +30,7 @@ export default function About() {
               <p>This creative space serves as a resource centre, a meeting place and melting pot for creative practitioners and organisations, CAVIC provides a supportive and creative space where innovative professionals from diverse artistic fields exploit their creative genius to foster social change. CAVIC also builds capacity and confidence across the creative workforce, ignited by creative education and skills provision.</p>
             </div>
             
-            <div className='test test3 about-card'>test!!!!</div>
+            <div className='test test3 about-card'></div>
           </div>
         </div>
        </div>

@@ -341,7 +341,7 @@ pre tt:after {
 }
 
 .hero-wrapper {
-  background-color: #0C0C0C;
+  background-color: #191919;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,6 +396,7 @@ pre tt:after {
     display: flex;
     width: 40%;
     height: 100%;
+    background-color: #000;
   }
 }
 
@@ -426,16 +427,15 @@ pre tt:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (min-width: 0px) {
   .hero-inner-content {
     width: 100%;
     height: 100%;
-    padding-top: 20%;
+    margin-top: 30%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -443,7 +443,8 @@ pre tt:after {
   .hero-inner-content {
     width: 100%;
     height: 100%;
-    padding-top: 0%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -454,41 +455,39 @@ pre tt:after {
 @media (min-width: 960px) {
   .hero-hello {
     font-size: 1.25em;
+    margin-left: -60%;
   }
-}
-
-.hero-name {
-  text-align: center;
 }
 
 @media (min-width: 0px) {
   .hero-name {
     line-height: 1.125em;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 600;
+    text-align: left;
   }
 }
 
 @media (min-width: 960px) {
   .hero-name {
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 600;
+    text-align: start;
   }
-}
-
-.hero-writeup {
-  text-align: center;
 }
 
 @media (min-width: 0px) {
   .hero-writeup {
     font-size: 0.85em;
+    text-align: center;
   }
 }
 
 @media (min-width: 960px) {
   .hero-writeup {
-    font-size: 1.5em;
+    margin-top: -15%;
+    font-size: 1.45em;
+    text-align: start;
   }
 }
 
@@ -572,7 +571,7 @@ pre tt:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0C0C0C;
+  background-color: #000;
 }
 
 @media (min-width: 0px) {
@@ -653,6 +652,7 @@ pre tt:after {
 
 @media (min-width: 0px) {
   .about-section {
+    margin-top: -1%;
     width: 100%;
     height: 200%;
   }
@@ -660,6 +660,7 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .about-section {
+    margin-top: 0%;
     width: 100%;
     height: 100%;
   }
@@ -710,7 +711,7 @@ pre tt:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #0C0C0C;
+  background: #181818;
 }
 
 @media (min-width: 0px) {
@@ -768,7 +769,7 @@ pre tt:after {
   .about-write-up {
     width: 100%;
     height: 50%;
-    background-color: #0C0C0C;
+    background-color: #181818;
   }
 }
 
@@ -776,7 +777,7 @@ pre tt:after {
   .about-write-up {
     width: 32.5%;
     height: 100%;
-    background-color: #0C0C0C;
+    background-color: #181818;
   }
 }
 
