@@ -473,6 +473,7 @@ pre tt:after {
     font-size: 6em;
     font-weight: 600;
     text-align: start;
+    margin-top: -55%;
   }
 }
 
@@ -485,7 +486,7 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .hero-writeup {
-    margin-top: -15%;
+    margin-top: -85%;
     font-size: 1.45em;
     text-align: start;
   }
