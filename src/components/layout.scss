@@ -298,7 +298,7 @@
   }
 
   .hero-wrapper{
-    background-color: #0C0C0C;
+    background-color: #191919;
     display: flex;
     
     width: 100%;
@@ -334,6 +334,7 @@
         display: flex;
         width: 40%;
         height: 100%;
+        background-color: #000
     };
   }
 
@@ -351,16 +352,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     @include xs{
       width: 100%;
       height: 100%;
-      padding-top: 20%
+      margin-top: 30%;
+      justify-content: space-around;
     };
     @include lg{
       width: 100%;
       height: 100%;
-      padding-top: 0%;
+      //padding-top: 5%;
+      justify-content: space-around;
       //padding-left: 10%
     };
   }
@@ -372,29 +375,35 @@
     };
     @include lg{
       font-size: 1.25em;
+      margin-left: -60%;
     };
   }
 
   .hero-name{
-    text-align: center;
+    
     @include xs{
       line-height: 1.125em;
-      font-size: 2.5em;
+      font-size: 3em;
       font-weight: 600;
+      text-align: left;
     };
     @include lg{
-      font-size: 4em;
+      font-size: 6em;
       font-weight: 600;
+      text-align: start;
     };
   }
 
   .hero-writeup{
-    text-align: center;
+    
     @include xs{
       font-size: 0.85em;
+      text-align: center;
     };
     @include lg{
-      font-size: 1.5em;
+      margin-top: -15%;
+      font-size: 1.45em;
+      text-align: start;
     };
   }
 
@@ -454,7 +463,7 @@
   .scroller-reel{
     //outline: medium dotted red;
     display: flex;
-    background-color: #0C0C0C;
+    background-color: #000;
     @include xs{
         flex-direction: row;
         width: 33%;
@@ -511,10 +520,12 @@
 
   .about-section{
     @include xs{
+      margin-top: -1%;
         width: 100%;
         height: 200%;
     };
     @include lg{
+      margin-top: 0%;
         width: 100%;
         height: 100%;
     };
@@ -549,7 +560,7 @@
     width: 100;
     display: flex;
     flex-direction: column;
-    background: #0C0C0C;
+    background: #181818;
     @include xs{
         height: 60%;
         justify-content: space-between;
@@ -581,12 +592,12 @@
     @include xs{
         width: 100%;
         height: 50%;
-        background-color: #0C0C0C;
+        background-color: #181818;
     };
     @include lg{
         width: 32.5%;
         height: 100%;
-        background-color: #0C0C0C;
+        background-color: #181818;
     }
 }
 
