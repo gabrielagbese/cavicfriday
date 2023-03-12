@@ -270,7 +270,7 @@
     @include xs{
         height: 200%;
         width: 100%;
-        margin-bottom: 300%;
+        
     };
     @include lg{
         height: 100%;
@@ -297,6 +297,15 @@
     height: 90vh;
   }
 
+  .events-section{
+    @include xs{
+     height: 87.4vh
+    };
+    @include lg{
+     height: 90vh
+    };
+  }
+
   .hero-wrapper{
     background-color: #191919;
     display: flex;
@@ -316,7 +325,7 @@
     //border: thin solid green;
     @include xs{
         width: 100%;
-        height: 67.5%;
+        height: 60.5%;
     }
     @include lg{
         width: 60%;
@@ -524,15 +533,23 @@
 
   .about-section{
     @include xs{
-      margin-top: -1%;
         width: 100%;
-        height: 200%;
+        height: 100%;
     };
     @include lg{
       margin-top: 0%;
         width: 100%;
         height: 100%;
     };
+}
+
+.about-attributes{
+  @include xs{
+   display: none
+  };
+  @include lg{
+   display: block
+  };
 }
 
 .about-image{
@@ -620,13 +637,13 @@
    font-size: 1.1125rem
   };
   @include lg{
-    font-size: 1.25rem
+    font-size: 1.125rem
   };
 }
 
 .partner-text{
   font-size: 1.75rem;
-  text-decoration: underline;
+  //text-decoration: underline;
   text-decoration-thickness: 1px;
   margin-top: 5.5%;
   opacity: 0.75;
@@ -636,27 +653,39 @@
   display: flex;
   justify-content: space-evenly;
   @include xs{
-    width: 40%;
-    margin-left: 30%;
-    padding-bottom: 20%;
-    z-index: 1;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    z-index: 0;
+    flex-direction: row;
+    
   };
   @include lg{
     width: 90%;
     margin-left: 5%;
-    
+    padding-bottom: 20%;
+    flex-direction: row;
   };
 }
 
 .sponsor-img{
-  //filter: grayscale(100%) brightness(105%);
+  align-self: center;
+  filter: grayscale(85%) brightness(105%) contrast(60%);
   width: 25%;
+  height: 25%;
+    
+}
+.sponsor-img2{
+  align-self: center;
+  filter: grayscale(100%) brightness(1500%);
+  width: 60%;
   height: 25%;
 }
 
-.sponsor-img2{
-  //filter: grayscale(100%) brightness(1500%);
-  width: 60%;
+.sponsor-img3{
+  align-self: center;
+  filter: grayscale(100%) brightness(1750%);
+  width: 25%;
   height: 25%;
 }
 
@@ -668,9 +697,8 @@
     background-color: #2a2a2a;
     box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.1);
     @include xs{
-      margin-bottom: 2%;
       width: 100vw;
-      height: 65vh;
+      height: 50vh;
       font-size: 1.125rem;
       padding: 1em;
       text-align: center
@@ -686,13 +714,49 @@
     }
 }
 
+.test3{
+  @include xs{
+   height: 100%;
+  };
+  @include lg{
+   
+  };
+}
+
+.card3-text{
+  display: flex;
+  width: 100%;
+}
+
+.amenity-writeup{
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.amenity-text{
+  font-size: 1.5rem;
+  color: darkorange;
+}
+
+.amenity-list > li {
+  font-size: 1.5rem;
+  margin-left: 10%;
+}
+
+// .emp{
+//   width: 100;
+//   height: 1;
+// }
+
   .spaces-wrapper{
     width: 200%;
     height: 100%;
     //background-color: blue;
-    border-top: thin solid rgba(105, 105, 105, 1);
+    border-top: thin solid rgba(135, 135, 135, 1);
     box-sizing: content-box;
     display: flex;
+    position: relative;
+    z-index: 5;
   }
 
   .spaces-container{
@@ -719,16 +783,19 @@
     z-index: 2;
 
     @include xs{
-      padding: 0.25em;
+      padding-left: 1.75em;
+      padding-right: 1.125em;
       width: 100%;
       height: 33%;
       background: #2D2D2D;
+      font-size: 1.175rem;
     }
     @include lg{
       padding: 1em;
       width: 40%;
       height: 100%;
       background-color: #1C1C1C;
+      font-size: 1.25rem;
       box-shadow: 10px 0 70px rgba(0, 0, 0, 0.23);
     }
   }
@@ -741,6 +808,7 @@
 
   .spaces-list{
     width: 100%;
+    color: #c7c5c5;
     border-bottom: thin solid #fff4db2e;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -756,9 +824,11 @@
   }
 
   .spaces-list:hover{
-    font-size: 1.6rem;
-    margin-bottom: 0.45;
-    margin-top: 0.45;
+    color: white;
+    filter: brightness(200);
+    // font-size: 1.6rem;
+    // margin-bottom: 0.45;
+    // margin-top: 0.45;
   }
 
   .space-space{
@@ -776,9 +846,9 @@
     cursor: pointer;
 
     @include xs{
-      margin-top: -15%;
+      margin-top: -30%;
       min-width: 65%;
-      height: 90%;
+      height: 70%;
     }
     @include lg{
       margin-top: 0%;
@@ -797,8 +867,8 @@
   .space-card-name{
     color: white;
     font-weight: 500;
-    font-size: 1.75em;
-    margin-top: -4.5vh;
+    font-size: 1.5em;
+    margin-top: -3vh;
   }
 
   .spaces-scroller{
@@ -824,9 +894,11 @@
     letter-spacing: -1px;
     @include xs{
       font-size: 2em;
+      margin-bottom: var(-(--space-4));
     }
     @include lg{
       font-size: 4em;
+      margin-bottom: 2%;
     }
   }
 
@@ -835,18 +907,137 @@
     height: 100%;
     z-index: 4;
     //margin-left: -10%;
-    background: red;
+    background: rgb(18, 18, 18);
+    @include xs{
+     opacity: 0;
+    };
+    @include lg{
+      opacity: 1;
+    };
+   
   }
 
   .space-details-wrapper{
-    border: medium solid blue;
+    //border: medium solid blue;
     @include xs{
       width: 98.5%;
       height: 100%;
+      overflow: scroll;
     };
     @include lg{
       width: 68.5%;
       height: 100%;
+      overflow: hidden;
+    };
+  }
+
+  .spaces-inner-content{
+    @include xs{
+     
+    };
+    @include lg{
+     display: flex;
+     width: 100%;
+     height: 80%;
+     padding-left: 2.5%
+    };
+  }
+  .space-left{
+    @include xs{
+     
+    };
+    @include lg{
+      width: 50%;
+      height: 100%;
+      border-right:thin dotted rgba(255, 255, 255, 0.1); 
+    };
+  }
+
+  .space-right{
+    @include xs{
+     
+    };
+    @include lg{
+      width: 50%;
+      height: 100%;
+    };
+  }
+
+  .space-detail-title{
+    color: white;
+    width: 100%;
+    @include xs{
+     font-size: 2rem;
+    };
+    @include lg{
+     font-size: 3.5rem;
+    };
+  }
+
+  .space-detail-image{
+    @include xs{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+      object-position: bottom;
+    };
+    @include lg{
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      object-position: right;
+      margin-left: -2.5%;
+    };
+  }
+
+  .pricing{
+    color: white;
+    @include xs{
+      font-size: 1.25rem;
+      margin-bottom: 1.5%;
+    };
+    @include lg{
+      font-size: 2.25rem;
+      margin-bottom: -0.5%;
+    };
+  }
+
+  .writeup-wrapper{
+    @include xs{
+     
+    };
+    @include lg{
+      width: 100%;
+      max-height: 30%;
+    };
+  }
+
+  .space-writeup{
+    color: rgb(201, 199, 199);
+    padding-left: 2%;
+    padding-right: 5%;
+    
+    @include xs{
+      font-size: 1.125rem;
+    };
+    @include lg{
+      margin-top: -2%;
+      font-size: 1.5rem;
+    };
+  }
+
+  .space-amenities{
+    color: white;
+    text-decoration: underline;
+    margin-left: 5%;
+
+    @include xs{
+      font-size: 1.25rem;
+      margin-top: 2.5%;
+    };
+    @include lg{
+      font-size: 2.25rem;
+      margin-top: 2.5%;
     };
   }
 
@@ -874,7 +1065,7 @@
   .card{
     @include xs{
         position: sticky;
-        top: 10%;
+        top: 9%;
     };
     @include lg{
         position: static;
@@ -885,23 +1076,36 @@
   .about-card{
     @include xs{
         position: sticky;
-        top: 40%;
+        top: 40vh;
+        height: 60%;
+        margin-bottom: 20%;
     };
     @include lg{
         position: static;
         top: 0%;
+        margin-bottom: 0%;
     };
+  }
+
+  .empty{
+    position: static;
+    top: 40%;
+    background-color: pink;
+    height: 3%;
   }
 
 
   .loc-scroll{
     height: 30vh;
     padding-bottom: 1%;
+    margin-top: -15%;
+    background-color: #000;
+    //z-index: 1;
   }
 
   .section-rest{
     width: 100%;
-    height: auto;
+    height: 200%;
   }
 
   .events-wrapper{
@@ -909,6 +1113,7 @@
     height: 100%;
     background-color: #000;
     overflow: hidden;
+    border-top: thin solid rgba(175, 175, 175, 1);
     @include lg{
       display: flex;
     }
@@ -919,6 +1124,7 @@
       color: darkorange;
       font-size: 2rem;
       padding: 1%;
+      margin-bottom: var(-(--space-4));
     };
     @include lg{
       color: darkorange;
@@ -929,31 +1135,32 @@
 
   .event-text{
     @include xs{
-      color: white;
-      font-size: 0.85rem;
-      padding: 3%;
-      margin-top: -10%;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1rem;
+      padding-left: 3%;
+      margin-bottom: var((--space-4));
     };
     @include lg{
-      color: white;
       font-size: 1.25rem;
-      padding: 3%;
-      margin-top: -5%;
+      padding-left: 3%;
+      padding-right: 3%;
+      margin-bottom: 0;
     };
   }
 
   .upcoming-title{
     @include xs{
       color: white;
-      font-size: 1.5rem;
-      padding: 3%;
-      margin-top: -10%;
+      font-size: 1.25rem;
+      padding-left: 3%;
+      margin-bottom: var(-(--space-4));
+      margin-top: -2%;
     };
     @include lg{
       color: white;
       font-size: 1.5rem;
-      padding: 3%;
-      margin-top: -5%;
+      padding-left: 3%;
+      margin-top: 0%;
     };
   }
 
@@ -962,35 +1169,32 @@
       color: white;
       font-size: 1.75rem;
       padding-left: 5%;
-      margin-top: -11%;
+      font-weight: 600;
+      margin-bottom: var(-(--space-4));
     };
     @include lg{
-      color: white;
       font-size: 2.5rem;
       padding-left: 5%;
-      margin-top: -5%;
     };
   }
 
   .upcoming-date{
     @include xs{
-      color: white;
+      color: rgba(255, 255, 255, 0.75);
       font-size: 1rem;
-      margin-top: -8.5%;
       padding-left: 5%;
+      margin-bottom: var(-(--space-4));
     };
     @include lg{
-      color: white;
       font-size: 1rem;
-      margin-top: -5%;
       padding-left: 5%;
     };
   }
 
   .calendar{
     padding: 2%;
-    width: 80%;
-    height: 40%;
+    width: 100%;
+    height: 52%;
     //border: thin solid orange;
     @include xs{
      display: none
@@ -1010,7 +1214,7 @@
     };
     @include lg{
       overflow: hidden;
-      width: 40%;
+      min-width: 40%;
       height: 100%;
     };
   }
@@ -1028,7 +1232,7 @@
       //border: thick solid pink;
     };
     @include lg{
-      width: 60%;
+      min-width: 60%;
       height: 100%;
       overflow-y: visible;
     };
@@ -1036,13 +1240,204 @@
 
   .event-item{
     @include xs{
-      width: 95%;
+      width: 85%;
+      min-height: 40%;
+      margin-top: 2%;
+      margin-bottom: 7.5%;
+      border: thin solid rgba(255, 255, 255, 0.75);
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: start;
+    }
+    @include lg{
+      width: 75%;
       min-height: 40%;
       margin-top: 2%;
       margin-bottom: 2%;
-      border: thin solid red;
+      border: thin solid rgba(255, 255, 255, 0.529);
+      display: flex;
+      flex-direction: row;
     }
+  }
+  .item-text{
+    @include xs{
+      width: 100%;
+      height: 100%;
+      margin-top: 2.5%;
+    };
     @include lg{
-      
+     border-right: thin solid white;
+     width: 40%;
+     height: 100%;
+     margin-top: 0;
+    };
+  }
+
+  .item-image{
+    
+    //object-position: center;
+    overflow: hidden;
+    @include xs{
+      width: 100%;
+      min-height: 67.5%;
+      //border: medium solid green;
+    };
+    @include lg{
+     width: 60%;
+     height: 100%;
+    };
+  }
+
+  .item-image > img{
+    object-fit: cover;
+    width: max-content;
+    height: max-content;
+    @include xs{
+      margin-top: -10%;
+    };
+    @include lg{
+      margin-top: 0%;
+    };
+  }
+
+  .item-name{
+    border-bottom: thin solid #ffffff00;
+    @include xs{
+      width: 100%;
+      height: 35%;
+    };
+    @include lg{
+     width: 100%;
+     height: 70%;
+    };
+  }
+
+  .item-name > p {
+    align-self: center;
+    justify-self: center;
+    @include xs{
+      font-size: 2rem;
+      color: white;
+      padding-left: 7.5%;
+    };
+    @include lg{
+      font-size: 2.75rem;
+      color: white;
+      padding: 7.5%;
+    };
+  }
+  .item-button{
+    background-color: orange;
+    cursor: pointer;
+    display: flex;
+    
+    @include xs{
+      width: 100%;
+      height: 25%;
+      align-items: center;
+      justify-content: center;
+      margin-top: -2.125%;
+    };
+    @include lg{
+     width: 65%;
+     margin-top: 10%;
+     height: 20%;
+     align-items: center;
+    justify-content: center;
+    };
+  }
+
+  .item-button > p {
+    color: white;
+    font-size: 1.25rem;
+    padding-top: 10%;
+    // @include xs{
+    //   margin-left: 10%;
+    // };
+    // @include lg{
+    //   margin-left: 0%;
+    // };
+  }
+
+  .invisible-event{
+    @include xs{
+     width: 100%;
+     min-height: 40vh;
+    };
+    @include lg{
+      width: 0%;
+      height: 0;
+      min-height: 0vh;
+    };
+  }
+
+  .event-details{
+    @include xs{
+     width: 100%;
+     min-height: 120vh;
+     background-color: rgb(23, 23, 23);
+     color: white;
+     
+    };
+    @include lg{
+     min-width: 60%;
+     height: 100%;
+     background-color: rgb(23, 23, 23);
+    };
+  }
+
+  .event-detail-wrapper{
+    width: 100%;
+    height: 90vh;
+    //background-color: blue;
+  }
+
+  .event-detail-wrapper > img{
+    @include xs{
+      height: 40%;
+      object-fit: cover;
+      width: 100%;
+    };
+    @include lg{
+      height: 50%;
+      object-fit: contain;
+      width: 100%;
+    };
+  }
+
+  .event-detail-title{
+    font-size: 1.75rem;
+    padding-bottom: 0.5em;
+  }
+
+  .contact-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+    @include lg{
+      display: flex;
     }
+  }
+
+  .close-button{
+    background-color: #303030;
+    color: white;
+    border: thin solid white;
+    margin: 2%;
+    padding: 1%;
+  }
+
+  .nav-logo{
+    height: 100%;
+    @include xs{
+      margin-left: 2.5%;
+     width: 95%;
+     object-fit: contain;
+    };
+    @include lg{
+      width: 55%;
+      margin-left: 1%;
+    };
   }

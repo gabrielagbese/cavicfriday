@@ -7,6 +7,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 import Space from './Space';
 
 
+
 export default function Spaces() {
     const [mainImage, setMainImage] = useState(SpacesContent.pics1)
     const [nextMainImage, setNextMainImage] = useState(SpacesContent.pics2)
@@ -30,7 +31,7 @@ export default function Spaces() {
         })
         //mobile
         smm.add("(max-width: 720px)", () => {
-            readMoreTimeline.set(".space-details", { x:"-100vw",y:"100vh"})
+            readMoreTimeline.set(".space-details", { x:"-100vw",y:"100vh", opacity: 1})
             readMoreTimeline.to(".space-details", { y:"0vh"})
         })
     }
@@ -40,7 +41,7 @@ export default function Spaces() {
         })
         //mobile
         smm.add("(max-width: 720px)", () => {
-            readMoreTimeline.to(".space-details", { y:"100vh"})
+            readMoreTimeline.to(".space-details", { y:"100vh", opacity: 0},)
         })
     }
 
@@ -129,8 +130,7 @@ export default function Spaces() {
             <div className='spaces-container'>
                 <div className='spaces-main-text'>
                     <p className='spaces-heading'>Spaces</p>
-                    <p> CAVIC provides an array of spaces, including co-working spaces, event spaces, a conference room, and a fully equipped photo studio</p>
-                    {/* <button onClick={() => {nextElements()}}> next </button> */}
+                    <p> CAVIC provides an array of spaces, including co-working spaces, event spaces, a conference room, and a fully equipped photo studio.</p>                    {/* <button onClick={() => {nextElements()}}> next </button> */}
                     <div className='spaces-list list-top' onClick={() => {readMore("gallery")}}>
                         Gallery/Exhibition Space
                     </div>
@@ -170,7 +170,7 @@ export default function Spaces() {
                         </div>
                         <div className='space-card'>
                             <img src={SpacesContent.pics10} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Conference Room</p>
+                            <p className='space-card-name'  onClick={() => {readMore("conference")}}>Conference Room</p>
                         </div>
                         <div className='space-card'>
                             <img src={SpacesContent.pics6} className='space-card-image' draggable="false"></img>
@@ -211,7 +211,7 @@ export default function Spaces() {
 
             </div>
             <div className='space-details'>
-                <button onClick={() => {readLess()}}> close </button>
+                <button onClick={() => {readLess()}} className="close-button"> close </button>
                 <Space page={pageProp} />
             </div>
         </div>
