@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
   return (
     <div className="main-wrapper">
 		<nav className="nav">
-			<img className="nav-logo" src={require('../images/cavlogo.png').default}></img>
+			<img className="nav-logo" src={require('../images/cavlogo2.png').default}></img>
 		</nav>
 		<div className="main-container">
 			<section className="section-double">

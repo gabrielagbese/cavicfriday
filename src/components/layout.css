@@ -435,9 +435,6 @@ pre tt:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (min-width: 0px) {
@@ -447,6 +444,9 @@ pre tt:after {
     margin-top: 30%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -454,8 +454,12 @@ pre tt:after {
   .hero-inner-content {
     width: 100%;
     height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 10%;
   }
 }
 
@@ -490,6 +494,19 @@ pre tt:after {
 }
 
 @media (min-width: 0px) {
+  .hero-name-img {
+    margin-top: -15%;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-name-img {
+    margin-top: -60%;
+    margin-left: -3.5%;
+  }
+}
+
+@media (min-width: 0px) {
   .hero-writeup {
     font-size: 0.85em;
     text-align: start;
@@ -499,8 +516,8 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .hero-writeup {
-    margin-top: -85%;
-    font-size: 1.45em;
+    margin-top: -100%;
+    font-size: 1.25em;
     text-align: start;
   }
 }
@@ -520,6 +537,11 @@ pre tt:after {
   }
 }
 
+.cta {
+  background-color: darkorange;
+  color: white;
+}
+
 @media (min-width: 0px) {
   .cta {
     width: 30vw;
@@ -529,8 +551,10 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .cta {
+    font-size: 1.25rem;
     width: 10vw;
     height: 7.5vh;
+    margin-top: -95%;
   }
 }
 
@@ -1836,13 +1860,14 @@ pre tt:after {
 }
 
 .nav-logo {
-  height: 100%;
+  margin-top: 0.25%;
+  height: 90%;
 }
 
 @media (min-width: 0px) {
   .nav-logo {
     margin-left: 2.5%;
-    width: 95%;
+    width: 5%;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -1850,8 +1875,8 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .nav-logo {
-    width: 55%;
-    margin-left: 1%;
+    width: 5%;
+    margin-left: 5%;
   }
 }
 /*# sourceMappingURL=layout.css.map */
