@@ -38,7 +38,7 @@ const EventContent = {
     },
     fashion : {
         title: "Fashion",
-        writeup:"We provide a platform and an audience for fashion designers to be able to exhibit their wears.",
+        writeup:"We provide a platform and an audience for emerging and established fashion designers to be able to exhibit their wears.",
         image: require('../images/reels/events/14.jpg').default,
     },
 }

@@ -78,7 +78,7 @@ export default function Events() {
 				<div className='event-item' onClick={() => eventMore("openmic")}>
 					<div className='item-text'>
 						<div className='item-name'>
-							<p>Open Mic</p>
+							<p>Open Mic </p>
 						</div>
 						<div className='item-button' onClick={() => eventMore("openmic")}>
 							<p>Read More</p>
