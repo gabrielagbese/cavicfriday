@@ -366,8 +366,8 @@
       width: 100%;
       height: 100%;
       margin-top: 30%;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: center;
+      align-items: start;
     };
     @include lg{
       width: 100%;
@@ -409,7 +409,8 @@
 
   .hero-name-img{
     @include xs{
-      margin-top: -15%;
+      margin-top: -25%;
+      margin-left: -3.5%
     };
     @include lg{
       margin-top: -60%;
@@ -422,7 +423,7 @@
     @include xs{
       font-size: 0.85em;
       text-align: start;
-      margin-top: -50%;
+      margin-top: -5%;
       
     };
     @include lg{
@@ -448,8 +449,8 @@
     background-color: darkorange;
     color: white;
     @include xs{
-      width: 30vw;
-      height: 20vh;
+      width: 25vw;
+      height: 7.5vh;
     };
     @include lg{
       font-size: 1.25rem;
