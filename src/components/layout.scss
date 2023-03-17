@@ -245,11 +245,41 @@
     
     position: fixed;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     z-index: 20;
+  }
+
+  .nav-tray{
+    height: 100%;
+    //border: thin solid white;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include xs{
+      width: 45%;
+    };
+    @include lg{
+      width: 15%;
+    };
+  }
+
+  .nav-item{
+    
+    color: white;
+    font-weight: 400;
+    @include xs{
+      margin-top: 10%;
+      font-size: 1.5rem;
+    };
+    @include lg{
+      margin-top: 2.5%;
+      font-size: 2rem;
+    };
   }
 
   .main-container{
@@ -1451,7 +1481,7 @@
     height: 90%;
     @include xs{
       margin-left: 2.5%;
-      width: 5%;
+      width: 12.5%;
       object-fit: contain;
     };
     @include lg{

@@ -69,6 +69,10 @@ const Layout = ({ children }) => {
     <div className="main-wrapper">
 		<nav className="nav">
 			<img className="nav-logo" src={require('../images/cavlogo2.png').default}></img>
+			<div className="nav-tray">
+				<p className="nav-item">About</p>
+				<p className="nav-item">Contact</p>
+			</div>
 		</nav>
 		<div className="main-container">
 			<section className="section-double">
