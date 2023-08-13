@@ -15,24 +15,10 @@ import LocalScroller from "./LocalScroller"
 
 
 const Home = ({ children }) => {
-	// 	const data = useStaticQuery(graphql`
-	//     query SiteTitleQuery {
-	//       site {
-	//         siteMetadata {
-	//           title
-	//         }
-	//       }
-	//     }
-	//   `)
+
 
 	useEffect(() => {
 		let mm = gsap.matchMedia();
-
-
-
-		//scroll-trigger
-
-
 
 		mm.add(" (min-width: 721px)", () => {
 			let tl = gsap.timeline({
@@ -52,27 +38,6 @@ const Home = ({ children }) => {
 			tl.to(".events-list", { yPercent: -275 })
 		})
 
-		// const aboutNavItem = document.querySelector(".nav-item-about");
-		// aboutNavItem.addEventListener("click", () => {
-		// 	gsap.to(".main-container", {
-		// 		scrollTo: "+=575%",
-		// 		duration: 1, // Adjust animation duration as needed
-		// 		ease: "power3.inOut", // Adjust easing function as needed
-		// 	});
-		// });
-
-
-		//mobile scroll-trigger animation
-		// mm.add(" (max-width: 720px)", () => {
-		// 	tl.to(".contact", { yPercent: 0 })
-
-		// })
-
-		// let ctaButton = document.getElementById("nav-itm")
-		// ctaButton.addEventListener('click', function(e) {
-		// 	window.scrollTo(0, 700)
-		// 	//alert("clicked")
-		// })
 	});
 
 	return (

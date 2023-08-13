@@ -45,7 +45,7 @@ export default function Events() {
 				<p className='upcoming-event'> Gallery Exhibition</p>
 				<p className='upcoming-date'> 11th August 2023</p>
 				<div className='calendar'>
-					<ReactEmbeddedGoogleCalendar publicUrl="https://calendar.google.com/calendar/embed?src=cavicnigeriainfo%40gmail.com&ctz=UTC" />
+					{/* <ReactEmbeddedGoogleCalendar publicUrl="https://calendar.google.com/calendar/embed?src=cavicnigeriainfo%40gmail.com&ctz=UTC" /> */}
 				</div>
 			</div>
 			<div className='events-list'>
