@@ -1550,3 +1550,83 @@ pre tt:after {
   background-color: #181818;
   color: white;
 }
+
+.ad-center {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+.showcase-banner {
+  @include xs {
+    min-width: 100%;
+  }
+  @include lg {
+    min-width: 50%;
+  }
+  height: 100%;
+  background: url(../images/Showcases.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  //border: thin solid black;
+}
+
+.showcase-text {
+  @include xs {
+    display: none;
+  }
+  @include lg {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+.ad-close {
+  @include xs {
+    width: 10%;
+    aspect-ratio: 1/1;
+  }
+  @include lg {
+    width: 5%;
+    height: 5%;
+  }
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.ad-more {
+  width: 20%;
+  height: 7.5%;
+  background-color: #000;
+  color: white;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.ad-dialog {
+  background-color: #dddddd;
+  border: thin solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  @include xs {
+    width: 97.5vw;
+    height: 65vh;
+  }
+  @include lg {
+    width: 70vw;
+    height: 90vh;
+  }
+}
+
+dialog::backdrop {
+  background-color: #00000099;
+}

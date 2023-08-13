@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import Header from "./header"
 import gsap from "gsap"
 import "./layout.css"
@@ -17,7 +17,12 @@ import LocalScroller from "./LocalScroller"
 const Home = ({ children }) => {
 
 
+
+
 	useEffect(() => {
+
+
+
 		let mm = gsap.matchMedia();
 
 		mm.add(" (min-width: 721px)", () => {
@@ -66,6 +71,7 @@ const Home = ({ children }) => {
 
 				</section>
 			</div>
+
 		</div>
 	)
 }
