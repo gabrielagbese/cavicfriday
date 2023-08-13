@@ -5,11 +5,17 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const SecondPage = () => (
-  <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  <>
+    <nav className="nav">
+      <Link className="nav-logo" to="/"><img src={require('../images/cavlogo2.png').default}></img></Link>
+
+      <div className="nav-tray">
+        <p className="nav-item nav-item-about">Abouts</p>
+        <Link to="/page-2">About</Link>
+        <p className="nav-item">Contact</p>
+      </div>
+    </nav>
+  </>
 )
 
 export const Head = () => <Seo title="Page two" />

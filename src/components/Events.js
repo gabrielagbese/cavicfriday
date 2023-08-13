@@ -43,7 +43,7 @@ export default function Events() {
 				<p className='event-text'>CAVIC pulls together resources within its network to organize exhibitions as well as host public information and arts appreciation events for the wider community in our spaces.</p>
 				<p className='upcoming-title'> Upcoming Event:</p>
 				<p className='upcoming-event'> Gallery Exhibition</p>
-				<p className='upcoming-date'> 1st January 2001</p>
+				<p className='upcoming-date'> 11th August 2023</p>
 				<div className='calendar'>
 					<ReactEmbeddedGoogleCalendar publicUrl="https://calendar.google.com/calendar/embed?src=cavicnigeriainfo%40gmail.com&ctz=UTC" />
 				</div>
