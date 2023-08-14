@@ -8,7 +8,7 @@ function AboutNew() {
                 <Link className="nav-logo" to="/"><img src={require('../images/cavlogo2.png').default}></img></Link>
                 <div className="nav-tray">
 
-                    <Link to="/AboutNew" className="nav-item nav-item-about">About</Link>
+                    <Link className="nav-item nav-item-about">About</Link>
                     <Link to="/ContactNew" className="nav-item nav-item-about">Contact</Link>
                 </div>
             </nav>

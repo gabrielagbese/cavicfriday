@@ -19,21 +19,30 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      adDialogRef.current.showModal();
-    }, 1000);
-  },);
+    const hasDialogBeenShown = localStorage.getItem('dialogShown');
+
+    if (!hasDialogBeenShown) {
+      setTimeout(() => {
+        adDialogRef.current.showModal();
+        localStorage.setItem('dialogShown', 'true');
+      }, 1000);
+    }
+  }, []);
 
   return (
     <>
       <nav className="nav">
-        <Link className="nav-logo" to="/"><img src={require('../images/cavlogo2.png').default}></img></Link>
+        <Link className="nav-logo"><img src={require('../images/cavlogo2.png').default}></img></Link>
         <div className="nav-tray">
 
           <Link to="/AboutNew" className="nav-item nav-item-about">About</Link>
           <Link to="/ContactNew" className="nav-item nav-item-about">Contact</Link>
         </div>
       </nav>
+
+      <main>
+        <Home />
+      </main>
       <dialog className='ad-dialog' ref={adDialogRef}>
         <button className="ad-close" onClick={closeModal}>X</button>
         <div className="ad-center">
@@ -45,9 +54,6 @@ const IndexPage = () => {
         </div>
         {/* <button className="ad-more">Learn More</button> */}
       </dialog>
-      <main>
-        <Home />
-      </main>
     </>
   )
 
