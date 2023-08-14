@@ -1772,7 +1772,7 @@ pre tt:after {
 
 @media (min-width: 0px) {
   .item-name > p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     padding-left: 7.5%;
   }
@@ -1780,7 +1780,7 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .item-name > p {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     color: white;
     padding: 7.5%;
   }

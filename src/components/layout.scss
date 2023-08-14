@@ -1339,12 +1339,12 @@ pre tt:after {
   align-self: center;
   justify-self: center;
   @include xs {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     padding-left: 7.5%;
   }
   @include lg {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     color: white;
     padding: 7.5%;
   }
