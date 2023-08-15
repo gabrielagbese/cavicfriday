@@ -239,7 +239,7 @@ pre tt:after {
   }
 }
 
-.nav {
+.navi {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -259,18 +259,20 @@ pre tt:after {
   align-items: center;
   justify-content: space-between;
   @include xs {
-    width: 45%;
+    width: 70%;
+    //margin-top: -10%;
   }
   @include lg {
-    width: 15%;
+    width: 25%;
   }
 }
 
 .nav-item {
   color: white;
-  font-weight: 400;
+  font-weight: 600;
+  text-decoration: none;
   @include xs {
-    margin-top: 10%;
+    //margin-top: 10%;
     font-size: 1.5rem;
   }
   @include lg {
@@ -1629,4 +1631,201 @@ pre tt:after {
 
 dialog::backdrop {
   background-color: #00000099;
+}
+
+.project-page-wrapper {
+  width: 100vw;
+  //border: thin solid red;
+  height: auto;
+  padding-top: 10vh;
+  background-color: #181818;
+  color: white;
+  display: flex;
+  align-items: center;
+  @include xs {
+    flex-direction: column;
+  }
+  @include lg {
+    //flex-direction: row;
+  }
+}
+
+.project-side {
+  @include xs {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #232321;
+  }
+  @include lg {
+    width: 100%;
+    height: 35vh;
+  }
+}
+
+.project-page-title {
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.project-page-intro {
+  font-size: 1.35rem;
+}
+
+.project-item {
+  display: flex;
+  @include xs {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #eee;
+    flex-direction: column;
+  }
+  @include lg {
+    width: 70%;
+    height: 40vh;
+    border: 1px solid #eee;
+    margin: 1rem;
+    flex-direction: row;
+  }
+}
+
+.project-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image {
+  @include xs {
+    width: 100%;
+    min-height: 50%;
+    //background-color: pink;
+  }
+  @include lg {
+    height: 100%;
+    width: 45%;
+  }
+}
+
+.afp-img {
+  background: url(../images/afp/afp1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wbc-img {
+  background: url(../images/wbc/wbc1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-title {
+  @include xs {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+  @include lg {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+}
+
+.project-brief {
+  @include xs {
+    font-size: 1rem;
+  }
+  @include lg {
+    font-size: 1.5vw;
+  }
+}
+.project-info {
+  @include xs {
+    width: 100%;
+    min-height: 50%;
+  }
+  @include lg {
+    width: 55%;
+    height: 100%;
+  }
+}
+
+.project-dialog {
+  background-color: #333;
+  color: white;
+  @include xs {
+    width: 95%;
+    height: 95%;
+  }
+  @include lg {
+    width: 90%;
+    height: 80%;
+  }
+  //display: flex;
+}
+
+.project-dialog-wrapper {
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid black;
+  @include xs {
+  }
+  @include lg {
+    display: flex;
+  }
+}
+
+.pd-name-img {
+  //background-color: red;
+  @include xs {
+    width: 100%;
+    height: 50%;
+  }
+  @include lg {
+    width: 40%;
+    height: 95%;
+  }
+}
+
+.pd-name {
+  width: 100%;
+  @include xs {
+    height: 15%;
+    font-size: 2rem;
+    font-weight: 600;
+    //border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  @include lg {
+    font-size: 3rem;
+  }
+}
+
+.pd-img {
+  background: url(../images/reels/2.jpg);
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+  background-position: center;
+}
+
+.pd-text {
+  @include xs {
+  }
+  @include lg {
+    width: 60%;
+    height: 100%;
+    border-left: 3px solid black;
+    // border-right: 3px solid black;
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 1rem;
+  }
 }

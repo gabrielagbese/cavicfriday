@@ -4,11 +4,12 @@ import { Link } from "gatsby"
 function AboutNew() {
     return (
         <>
-            <nav className="nav">
+            <nav className="navi">
                 <Link className="nav-logo" to="/"><img src={require('../images/cavlogo2.png').default}></img></Link>
                 <div className="nav-tray">
 
                     <Link className="nav-item nav-item-about">About</Link>
+                    <Link to="/Projects" className="nav-item nav-item-about">Projects</Link>
                     <Link to="/ContactNew" className="nav-item nav-item-about">Contact</Link>
                 </div>
             </nav>
@@ -28,7 +29,7 @@ function AboutNew() {
                 </div>
                 <div className='ab-segment-reverse'>
                     <div className='ab-segment-image asi-4'></div>
-                    <p className='ab-segment-writing'>CAVIC is a great way of keeping artists and designers connected, with emphasis on interaction and cross-cultural artistic exchanges between national, regional and international artists. Serving as a promoter, CAVIC pulls together resources within its network to organize exhibitions as well as host public information and art appreciation events for the wider community including schools, specialist sectors and the members of the general public establishing a coffee-shop environment for creativity which attracts members of CAVIC’s various publics.</p>
+                    <p className='ab-segment-writing'>CAVIC is a great way of keeping artists and designers connected, with emphasis on interaction and cross-cultural artistic exchanges between national, regional and international artists. Serving as a promoter, CAVIC pulls together resources within its network to organize exhibitions as well as host public information and art appreciation events for the wider community including schools, specialist sectors and the members of the general public establishing a coffee-shop environment for creativity which attracts members of the public.</p>
                 </div>
             </div>
         </>

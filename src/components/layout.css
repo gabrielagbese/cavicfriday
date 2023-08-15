@@ -272,7 +272,7 @@ pre tt:after {
   background-color: black;
 }
 
-.nav {
+.navi {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,24 +307,24 @@ pre tt:after {
 
 @media (min-width: 0px) {
   .nav-tray {
-    width: 45%;
+    width: 70%;
   }
 }
 
 @media (min-width: 960px) {
   .nav-tray {
-    width: 15%;
+    width: 25%;
   }
 }
 
 .nav-item {
   color: white;
-  font-weight: 400;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 @media (min-width: 0px) {
   .nav-item {
-    margin-top: 10%;
     font-size: 1.5rem;
   }
 }
@@ -2165,5 +2165,265 @@ dialog::-webkit-backdrop {
 
 dialog::backdrop {
   background-color: #00000099;
+}
+
+.project-page-wrapper {
+  width: 100vw;
+  height: auto;
+  padding-top: 10vh;
+  background-color: #181818;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 0px) {
+  .project-page-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 0px) {
+  .project-side {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-color: #232321;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-side {
+    width: 100%;
+    height: 35vh;
+  }
+}
+
+.project-page-title {
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.project-page-intro {
+  font-size: 1.35rem;
+}
+
+.project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 0px) {
+  .project-item {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #eee;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-item {
+    width: 70%;
+    height: 40vh;
+    border: 1px solid #eee;
+    margin: 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.project-content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 0px) {
+  .project-image {
+    width: 100%;
+    min-height: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-image {
+    height: 100%;
+    width: 45%;
+  }
+}
+
+.afp-img {
+  background: url(../images/afp/afp1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wbc-img {
+  background: url(../images/wbc/wbc1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 0px) {
+  .project-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-title {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 0px) {
+  .project-brief {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-brief {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 0px) {
+  .project-info {
+    width: 100%;
+    min-height: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-info {
+    width: 55%;
+    height: 100%;
+  }
+}
+
+.project-dialog {
+  background-color: #333;
+  color: white;
+}
+
+@media (min-width: 0px) {
+  .project-dialog {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media (min-width: 960px) {
+  .project-dialog {
+    width: 90%;
+    height: 80%;
+  }
+}
+
+.project-dialog-wrapper {
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid black;
+}
+
+@media (min-width: 960px) {
+  .project-dialog-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 0px) {
+  .pd-name-img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .pd-name-img {
+    width: 40%;
+    height: 95%;
+  }
+}
+
+.pd-name {
+  width: 100%;
+}
+
+@media (min-width: 0px) {
+  .pd-name {
+    height: 15%;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+  }
+}
+
+@media (min-width: 960px) {
+  .pd-name {
+    font-size: 3rem;
+  }
+}
+
+.pd-img {
+  background: url(../images/reels/2.jpg);
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 960px) {
+  .pd-text {
+    width: 60%;
+    height: 100%;
+    border-left: 3px solid black;
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=layout.css.map */
