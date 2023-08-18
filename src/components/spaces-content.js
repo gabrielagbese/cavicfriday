@@ -9,6 +9,7 @@ const SpacesContent = {
     pics8: require('../images/reels/spaces/8.jpg').default,
     pics9: require('../images/reels/spaces/9.jpg').default,
     pics10: require('../images/reels/spaces/10.jpg').default,
+    pics11: require('../images/maker/9.jpg').default,
 }
 
 export default SpacesContent;

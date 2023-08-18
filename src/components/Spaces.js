@@ -23,25 +23,25 @@ export default function Spaces() {
     let smm = gsap.matchMedia()
     let readMoreTimeline = gsap.timeline()
 
-    function readMore(a){
+    function readMore(a) {
         setPageProp(a)
         //
         smm.add(" (min-width: 721px)", () => {
-            readMoreTimeline.to(".space-details", { x:"-70vw"})
+            readMoreTimeline.to(".space-details", { x: "-70vw" })
         })
         //mobile
         smm.add("(max-width: 720px)", () => {
-            readMoreTimeline.set(".space-details", { x:"-100vw",y:"100vh", opacity: 1})
-            readMoreTimeline.to(".space-details", { y:"0vh"})
+            readMoreTimeline.set(".space-details", { x: "-100vw", y: "100vh", opacity: 1 })
+            readMoreTimeline.to(".space-details", { y: "0vh" })
         })
     }
-    function readLess(){
+    function readLess() {
         smm.add(" (min-width: 721px)", () => {
-            readMoreTimeline.to(".space-details", { x:"0vw"})
+            readMoreTimeline.to(".space-details", { x: "0vw" })
         })
         //mobile
         smm.add("(max-width: 720px)", () => {
-            readMoreTimeline.to(".space-details", { y:"100vh", opacity: 0},)
+            readMoreTimeline.to(".space-details", { y: "100vh", opacity: 0 },)
         })
     }
 
@@ -71,56 +71,56 @@ export default function Spaces() {
 
         window.onmousemove = e => {
 
-            if(track.dataset.mouseDownAt === "0") return;
+            if (track.dataset.mouseDownAt === "0") return;
 
 
             const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-            maxDelta = window.innerWidth / 1.5
+                maxDelta = window.innerWidth / 1.5
 
             const percentage = (mouseDelta / maxDelta) * -100,
-                    nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -250);
+                nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+                nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -250);
 
             track.dataset.percentage = nextPercentage;
 
             track.animate({
                 transform: `translate(${nextPercentage}%, 0%)`
-              }, { duration: 1200, fill: "forwards" });
+            }, { duration: 1200, fill: "forwards" });
 
-            for(const image of track.getElementsByClassName("space-card-image")) {
+            for (const image of track.getElementsByClassName("space-card-image")) {
                 image.animate({
-                  objectPosition: `${100 + nextPercentage/2.5}% center`
+                    objectPosition: `${100 + nextPercentage / 2.5}% center`
                 }, { duration: 1200, fill: "forwards" });
-              }
+            }
 
-            
+
         }
 
         window.ontouchmove = e => {
 
-            if(track.dataset.mouseDownAt === "0") return;
+            if (track.dataset.mouseDownAt === "0") return;
 
 
             const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.touches[0].clientX,
-            maxDelta = window.innerWidth / 2
+                maxDelta = window.innerWidth / 2
 
             const percentage = (mouseDelta / maxDelta) * -100,
-                    nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -475);
+                nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+                nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -475);
 
             track.dataset.percentage = nextPercentage;
 
             track.animate({
                 transform: `translate(${nextPercentage}%, 0%)`
-              }, { duration: 900, fill: "forwards" });
+            }, { duration: 900, fill: "forwards" });
 
-            for(const image of track.getElementsByClassName("space-card-image")) {
+            for (const image of track.getElementsByClassName("space-card-image")) {
                 image.animate({
-                  objectPosition: `${100 + nextPercentage/5}% center`
+                    objectPosition: `${100 + nextPercentage / 5}% center`
                 }, { duration: 900, fill: "forwards" });
-              }
+            }
 
-            
+
         }
     },);
 
@@ -130,73 +130,80 @@ export default function Spaces() {
             <div className='spaces-container'>
                 <div className='spaces-main-text'>
                     <p className='spaces-heading'>Spaces</p>
-                    <p> CAVIC provides an array of spaces, including co-working spaces, event spaces, a conference room, and a fully equipped photo studio.</p>                    {/* <button onClick={() => {nextElements()}}> next </button> */}
-                    <div className='spaces-list list-top' onClick={() => {readMore("gallery")}}>
+                    {/* <p> CAVIC provides an array of spaces, including co-working spaces, event spaces, a conference room, and a fully equipped photo studio.</p>                    <button onClick={() => {nextElements()}}> next </button> */}
+                    <div className='spaces-list list-top' onClick={() => { readMore("maker") }}>
+                        Maker Space
+                    </div>
+                    <div className='spaces-list' onClick={() => { readMore("gallery") }}>
                         Gallery/Exhibition Space
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("dedicated")}}>
+                    <div className='spaces-list' onClick={() => { readMore("dedicated") }}>
                         Dedicated Desk Space
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("conference")}}>
+                    <div className='spaces-list' onClick={() => { readMore("conference") }}>
                         Conference Room
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("training")}}>
+                    <div className='spaces-list' onClick={() => { readMore("training") }}>
                         Training/Workshop Space
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("studio")}}>
+                    <div className='spaces-list' onClick={() => { readMore("studio") }}>
                         Studio Space
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("private")}}>
+                    <div className='spaces-list' onClick={() => { readMore("private") }}>
                         Private Offices
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("coworking")}}>
+                    <div className='spaces-list' onClick={() => { readMore("coworking") }}>
                         Co-Working Space
                     </div>
-                    <div className='spaces-list' onClick={() => {readMore("chill")}}>
+                    <div className='spaces-list' onClick={() => { readMore("chill") }}>
                         Chill Zone
                     </div>
                 </div>
-                
+
                 <div className='spaces-scroller'>
                     <div className="spaces-scroller-inner" data-mouse-down-at="0" data-prev-percentage="0">
                         <div className='space-space'></div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics1} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Gallery Space</p>
+                            <img src={SpacesContent.pics11} className='space-card-image' onClick={() => { readMore("maker") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("maker") }}>Maker Space</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics8} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("dedicated")}}>Dedicated Desk Space</p>
+                            <img src={SpacesContent.pics1} className='space-card-image' onClick={() => { readMore("gallery") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("gallery") }}>Gallery Space</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics10} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("conference")}}>Conference Room</p>
+                            <img src={SpacesContent.pics8} className='space-card-image' onClick={() => { readMore("dedicated") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("dedicated") }}>Dedicated Desk Space</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics6} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("training")}}>Training Space</p>
+                            <img src={SpacesContent.pics10} className='space-card-image' onClick={() => { readMore("conference") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("conference") }}>Conference Room</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics5} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("studio")}}>Studio Space</p>
+                            <img src={SpacesContent.pics6} className='space-card-image' onClick={() => { readMore("training") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("training") }}>Training Space</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics4} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("private")}}>Private Offices</p>
+                            <img src={SpacesContent.pics5} className='space-card-image' onClick={() => { readMore("studio") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("studio") }}>Studio Space</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics3} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("coworking")}}>CoWorking Space</p>
+                            <img src={SpacesContent.pics4} className='space-card-image' onClick={() => { readMore("private") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("private") }}>Private Offices</p>
                         </div>
                         <div className='space-card'>
-                            <img src={SpacesContent.pics2} className='space-card-image' draggable="false"></img>
-                            <p className='space-card-name'  onClick={() => {readMore("gallery")}}>Chill Space</p>
+                            <img src={SpacesContent.pics3} className='space-card-image' onClick={() => { readMore("coworking") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("coworking") }}>CoWorking Space</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics2} className='space-card-image' onClick={() => { readMore("gallery") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("gallery") }}>Chill Space</p>
                         </div>
                         <div className='space-space'></div>
                     </div>
                 </div>
-                
-                
+
+
                 {/* <div className='spaces-main-image'>
                 <div className='main-image-wrapper'>
                     <div className='transition-main-image'></div>
@@ -211,7 +218,7 @@ export default function Spaces() {
 
             </div>
             <div className='space-details'>
-                <button onClick={() => {readLess()}} className="close-button"> close </button>
+                <button onClick={() => { readLess() }} className="close-button"> close </button>
                 <Space page={pageProp} />
             </div>
         </div>

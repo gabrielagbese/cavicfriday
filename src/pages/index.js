@@ -44,7 +44,7 @@ const IndexPage = () => {
       <main>
         <Home />
       </main>
-      <dialog className='ad-dialog' ref={adDialogRef}>
+      {/* <dialog className='ad-dialog' ref={adDialogRef}>
         <button className="ad-close" onClick={closeModal}>X</button>
         <div className="ad-center">
           <div className="showcase-banner"></div>
@@ -53,8 +53,8 @@ const IndexPage = () => {
             For those artistically inclined or technologically curious, the festival unfolds as a panoramic view into what the collaborative future holds. It's about bridging the rich legacies of art with the innovative streaks of technology, sparking waves of fresh insights and inspirations.
           </p>
         </div>
-        {/* <button className="ad-more">Learn More</button> */}
-      </dialog>
+        <button className="ad-more">Learn More</button>
+      </dialog> */}
     </>
   )
 

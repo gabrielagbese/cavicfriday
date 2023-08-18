@@ -41,6 +41,7 @@ const Home = ({ children }) => {
 			tl.to(".card1", { yPercent: -100 })
 			tl.to(".card2", { yPercent: -200 })
 			tl.to(".events-list", { yPercent: -275 })
+			tl.to(".card3", { yPercent: -322 })
 		})
 
 	});
@@ -68,8 +69,12 @@ const Home = ({ children }) => {
 					<div className="events-section card card2">
 						<Events />
 					</div>
+					{/* <div className=" card3">
+						<p>maker</p>
+					</div> */}
 
 				</section>
+
 			</div>
 
 		</div>
