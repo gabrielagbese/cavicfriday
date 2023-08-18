@@ -1915,19 +1915,143 @@ pre tt:after {
   padding-bottom: 0.5em;
 }
 
-.contact-wrapper {
+.contact-page-wrapper {
   width: 100%;
   height: 100%;
-  background-color: #000;
   color: white;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact-inner {
+  border: thin solid black;
+}
+
+@media (min-width: 0px) {
+  .contact-inner {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 @media (min-width: 960px) {
-  .contact-wrapper {
+  .contact-inner {
+    width: 70%;
+    height: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 0px) {
+  .map {
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 0px) {
+  .contact-details {
+    width: 100%;
+    height: 50%;
+    background-color: #2a2a2a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact-details {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.contact-label {
+  font-weight: 400;
+  color: darkorange;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  .contact-label {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact-label {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+.contact-content {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  .contact-content {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact-content {
+    font-size: 2rem;
   }
 }
 
