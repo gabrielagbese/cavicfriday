@@ -1820,7 +1820,7 @@ dialog::backdrop {
 }
 
 .wbc-img {
-  background: url(../images/wbc/wbc1.jpg);
+  background: url(../images/mb/mb1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1965,5 +1965,11 @@ dialog::backdrop {
 .aat-img {
   background: url(../images/aat/aat1.jpg);
   background-size: contain;
+  background-position: center;
+}
+
+.ac-img {
+  background: url(../images/ac/ac1.jpg);
+  background-size: cover;
   background-position: center;
 }

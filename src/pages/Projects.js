@@ -121,9 +121,9 @@ function Projects() {
                     </dialog>
 
                     <div className='project-item'>
-                        <div className='project-image'></div>
+                        <div className='project-image ac-img'></div>
                         <div className='project-info'>
-                            <p className='project-title'>Afrilabs Dinner</p>
+                            <p className='project-title'>Afrilabs Collaboration</p>
                             <p className='project-brief'></p>
                             <button className='project-button' onClick={openAfd}>Read More</button>
                         </div>
