@@ -59,7 +59,7 @@ function Projects() {
                 </div>
                 <div className='project-content'>
                     <div className='project-item'>
-                        <div className='project-image'></div>
+                        <div className='project-image aat-img'></div>
                         <div className='project-info'>
                             <p className='project-title'>Arts and tech</p>
                             <p className='project-brief'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. </p>

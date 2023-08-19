@@ -2616,4 +2616,10 @@ dialog::backdrop {
   color: white;
   font-size: 1.25rem;
 }
+
+.aat-img {
+  background: url(../images/aat/aat1.jpg);
+  background-size: contain;
+  background-position: center;
+}
 /*# sourceMappingURL=layout.css.map */
