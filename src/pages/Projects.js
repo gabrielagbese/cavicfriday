@@ -72,7 +72,7 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Arts and Tech</p>
-                                <div className='pd-img'></div>
+                                <div className='pd-img pd-aat'></div>
                             </div>
                             <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
                         </div>
@@ -93,7 +93,7 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Art For Peace</p>
-                                <div className='pd-img'></div>
+                                <div className='pd-img pd-afp'></div>
                             </div>
                             <div className='pd-text'>
                                 Art for peace was a 4 days workshop program which ended with an art exhibition on Friday May 26 held at CAVIC. The project’s primary objective is to make a substantive contribution to the fulfillment of sustainable development goals in Nigeria by harnessing the transformative power of the arts through the training and empowerment of affected teenagers. The workshop aims to help them overcome obstacles and create a brighter future while safeguarding against radicalization in the ECOWAS region. Participants for the workshop were selected from areas heavily impacted by conflicts, warfare, and socio-economic marginalization.Through the medium of arts and crafts, the workshop aimed to prevent radicalization and foster peace and unity across affected communities.  </div>
@@ -114,7 +114,7 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Music Bootcamp</p>
-                                <div className='pd-img'></div>
+                                <div className='pd-img pd-mb'></div>
                             </div>
                             <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
                         </div>
@@ -133,8 +133,8 @@ function Projects() {
                         <button onClick={closeAfd}>close</button>
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
-                                <p className='pd-name'>Music Bootcamp Workshop</p>
-                                <div className='pd-img'></div>
+                                <p className='pd-name'>Afrilabs Collaboration</p>
+                                <div className='pd-img pd-ac'></div>
                             </div>
                             <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
                         </div>
