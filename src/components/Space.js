@@ -1,6 +1,7 @@
 import React from 'react'
 import SpaceContent from './space-content';
-import objectPath from 'object-path'
+import objectPath from 'object-path';
+import { Link } from "gatsby";
 
 export default function Space(props) {
 
@@ -37,8 +38,10 @@ export default function Space(props) {
 			<p className='space-detail-title'>{title}</p>
 			<div className='spaces-inner-content'>
 				<div className='space-left'>
-					<p className='pricing'>{price1}</p>
-					<p className='pricing'>{price2}</p>
+					{/* <p className='pricing'>{price1}</p>
+					<p className='pricing'>{price2}</p> */}
+					<p className='enquiry-space'>To make enquiries about this space:</p>
+					<Link to="/ContactNew" className="nav-item nav-item-about"><button className='enquiry-button'>Contact Us</button></Link>
 					<img className='space-detail-image' src={image}></img>
 					{image2 ? <img className='space-detail-image-long' src={image2}></img> : null}
 					{image3 ? <img className='space-detail-image' src={image3}></img> : null}

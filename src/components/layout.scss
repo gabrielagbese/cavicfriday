@@ -1938,3 +1938,26 @@ dialog::backdrop {
     height: 90vh;
   }
 }
+
+.blocked {
+  cursor: not-allowed;
+  color: #2d2d2d;
+}
+
+.blocked:hover {
+  color: #2d2d2d !important;
+}
+
+.enquiry-space {
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+}
+
+.enquiry-button {
+  background-color: darkorange;
+  width: 100px;
+  height: 50px;
+  color: white;
+  font-size: 1.25rem;
+}

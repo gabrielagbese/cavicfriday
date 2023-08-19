@@ -158,6 +158,9 @@ export default function Spaces() {
                     <div className='spaces-list' onClick={() => { readMore("chill") }}>
                         Chill Zone
                     </div>
+                    <div className='spaces-list blocked'>
+                        Library
+                    </div>
                 </div>
 
                 <div className='spaces-scroller'>
