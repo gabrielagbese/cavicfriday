@@ -1284,7 +1284,7 @@ pre tt:after {
     display: -ms-flexbox;
     display: flex;
     width: 97.5%;
-    height: 80%;
+    height: 65%;
     padding-left: 2.5%;
   }
 }
