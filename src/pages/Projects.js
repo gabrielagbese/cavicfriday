@@ -83,7 +83,7 @@ function Projects() {
                         <div className='project-image afp-img'></div>
                         <div className='project-info'>
                             <p className='project-title'>Art for Peace</p>
-                            <p className='project-brief'></p>
+                            <p className='project-brief'>The Art for peace workshop utilized artistic expression to empower conflict-affected youth, prevent radicalization, and promote unity in impacted communities.</p>
                             <button className='project-button' onClick={openAfp}>Read More</button>
                         </div>
                     </div>
@@ -96,15 +96,16 @@ function Projects() {
                                 <div className='pd-img pd-afp'></div>
                             </div>
                             <div className='pd-text'>
-                                Art for peace was a 4 days workshop program which ended with an art exhibition on Friday May 26 held at CAVIC. The project’s primary objective is to make a substantive contribution to the fulfillment of sustainable development goals in Nigeria by harnessing the transformative power of the arts through the training and empowerment of affected teenagers. The workshop aims to help them overcome obstacles and create a brighter future while safeguarding against radicalization in the ECOWAS region. Participants for the workshop were selected from areas heavily impacted by conflicts, warfare, and socio-economic marginalization.Through the medium of arts and crafts, the workshop aimed to prevent radicalization and foster peace and unity across affected communities.  </div>
+
+                                "Art for peace" was a four-day workshop program that concluded with an art exhibition on Friday, May 26, held at CAVIC. The project had a primary objective of contributing significantly to the fulfillment of sustainable development goals in Nigeria. It aimed to achieve this by harnessing the transformative power of the arts, providing training and empowerment to affected teenagers. The workshop, which took place in the past, was designed to assist these young individuals in overcoming obstacles and creating a more promising future, all while mitigating the risks of radicalization in the ECOWAS region. Participants were carefully selected from regions heavily impacted by conflicts, warfare, and socio-economic marginalization. Through the medium of arts and crafts, the workshop aimed to prevent radicalization and promote peace and unity within the affected communities, leaving a positive impact in its wake. </div>
                         </div>
                     </dialog>
 
                     <div className='project-item'>
                         <div className='project-image wbc-img'></div>
                         <div className='project-info'>
-                            <p className='project-title'>Music Bootcamp Workshop</p>
-                            <p className='project-brief'></p>
+                            <p className='project-title'>Music Bootcamp</p>
+                            <p className='project-brief'>Women in Music Bootcamp Abuja, in partnership with the Spanish Embassy and AECID, aimed to empower female musicians through skill-building and strategic support.</p>
                             <button className='project-button' onClick={openMbw}>Read More</button>
                         </div>
                     </div>
@@ -116,7 +117,7 @@ function Projects() {
                                 <p className='pd-name'>Music Bootcamp</p>
                                 <div className='pd-img pd-mb'></div>
                             </div>
-                            <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
+                            <div className='pd-text'>The inaugural Women in Music Bootcamp Abuja, which was hosted and facilitated by CAVIC Nigeria in partnership with the Spanish Embassy and The Spanish Agency for International Development Cooperation (AECID), proved to be a transformative empowerment event. Taking place from April 24 to April 28, 2023, the boot camp provided a pivotal platform for female musicians in Nigeria. Through insightful sessions, inspiring talks, and valuable interactions, the event equipped participants with essential skills and strategies to excel in the industry. This initiative, which aligned with Nigeria's sustainable development goals, has undoubtedly left an indelible mark, amplifying the voices and talents of women in the music scene.</div>
                         </div>
                     </dialog>
 
