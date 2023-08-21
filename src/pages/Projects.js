@@ -11,6 +11,9 @@ function Projects() {
     const afdRef = useRef(null);
 
     const aatWrapperRef = useRef(null);
+    const afpWrapperRef = useRef(null);
+    const mbWrapperRef = useRef(null);
+    const acWrapperRef = useRef(null)
 
     function scrollDiv(wrapper, amount) {
         wrapper.current.scrollLeft += wrapper.current.offsetWidth * amount;
@@ -88,8 +91,8 @@ function Projects() {
                                         <div className='project-slider-item aat5'></div>
                                     </div>
                                     <div className='slide-buttons'>
-                                        <button onClick={() => scrollDiv(aatWrapperRef, -1)}>&lt;</button>
-                                        <button onClick={() => scrollDiv(aatWrapperRef, 1)}>&gt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(aatWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(aatWrapperRef, 1)}>&gt;</button>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +115,19 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Art For Peace</p>
-                                <div className='pd-img pd-afp'></div>
+                                <div className='pd-img'>
+                                    <div className='project-slider-wrapper' ref={afpWrapperRef}>
+                                        <div className='project-slider-item afp1'></div>
+                                        <div className='project-slider-item afp2'></div>
+                                        <div className='project-slider-item afp3'></div>
+                                        <div className='project-slider-item afp4'></div>
+                                        <div className='project-slider-item afp5'></div>
+                                    </div>
+                                    <div className='slide-buttons'>
+                                        <button className='slide-button' onClick={() => scrollDiv(afpWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(afpWrapperRef, 1)}>&gt;</button>
+                                    </div>
+                                </div>
                             </div>
                             <div className='pd-text'>
 
@@ -134,7 +149,19 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Music Bootcamp</p>
-                                <div className='pd-img pd-mb'></div>
+                                <div className='pd-img'>
+                                    <div className='project-slider-wrapper' ref={mbWrapperRef}>
+                                        <div className='project-slider-item mb1'></div>
+                                        <div className='project-slider-item mb2'></div>
+                                        <div className='project-slider-item mb3'></div>
+                                        <div className='project-slider-item mb4'></div>
+                                        <div className='project-slider-item mb5'></div>
+                                    </div>
+                                    <div className='slide-buttons'>
+                                        <button className='slide-button' onClick={() => scrollDiv(mbWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(mbWrapperRef, 1)}>&gt;</button>
+                                    </div>
+                                </div>
                             </div>
                             <div className='pd-text'>The inaugural Women in Music Bootcamp Abuja, which was hosted and facilitated by CAVIC Nigeria in partnership with the Spanish Embassy and The Spanish Agency for International Development Cooperation (AECID), proved to be a transformative empowerment event. Taking place from April 24 to April 28, 2023, the boot camp provided a pivotal platform for female musicians in Nigeria. Through insightful sessions, inspiring talks, and valuable interactions, the event equipped participants with essential skills and strategies to excel in the industry. This initiative, which aligned with Nigeria's sustainable development goals, has undoubtedly left an indelible mark, amplifying the voices and talents of women in the music scene.</div>
                         </div>
@@ -154,7 +181,19 @@ function Projects() {
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>Afrilabs Collaboration</p>
-                                <div className='pd-img pd-ac'></div>
+                                <div className='pd-img'>
+                                    <div className='project-slider-wrapper' ref={acWrapperRef}>
+                                        <div className='project-slider-item ac1'></div>
+                                        <div className='project-slider-item ac2'></div>
+                                        <div className='project-slider-item ac3'></div>
+                                        <div className='project-slider-item ac4'></div>
+                                        <div className='project-slider-item ac5'></div>
+                                    </div>
+                                    <div className='slide-buttons'>
+                                        <button className='slide-button' onClick={() => scrollDiv(acWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(acWrapperRef, 1)}>&gt;</button>
+                                    </div>
+                                </div>
                             </div>
                             <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
                         </div>

@@ -1886,6 +1886,7 @@ dialog::backdrop {
   @include xs {
     width: 100%;
     height: 50%;
+    margin-bottom: 3rem;
   }
   @include lg {
     width: 40%;
@@ -1923,6 +1924,13 @@ dialog::backdrop {
   overflow-x: hidden;
 }
 
+.slide-button {
+  //padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .project-slider-item {
   min-width: 100%;
   height: 100%;
@@ -1954,6 +1962,96 @@ dialog::backdrop {
 
 .aat5 {
   background: url(../images/aat/aat5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.afp1 {
+  background: url(../images/afp/afp1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.afp2 {
+  background: url(../images/afp/afp2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.afp3 {
+  background: url(../images/afp/afp3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.afp4 {
+  background: url(../images/afp/afp4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.afp5 {
+  background: url(../images/afp/afp5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mb1 {
+  background: url(../images/mb/mb1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mb2 {
+  background: url(../images/mb/mb2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mb3 {
+  background: url(../images/mb/mb3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mb4 {
+  background: url(../images/mb/mb4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mb5 {
+  background: url(../images/mb/mb5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ac1 {
+  background: url(../images/ac/ac1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ac2 {
+  background: url(../images/ac/ac2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ac3 {
+  background: url(../images/ac/ac3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ac4 {
+  background: url(../images/ac/ac4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ac5 {
+  background: url(../images/ac/ac5.jpg);
   background-size: cover;
   background-position: center;
 }
