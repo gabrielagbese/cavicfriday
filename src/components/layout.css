@@ -2475,7 +2475,8 @@ dialog::backdrop {
 
 @media (min-width: 960px) {
   .project-brief {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
+    padding: 0.5rem;
   }
 }
 
@@ -2760,7 +2761,7 @@ dialog::backdrop {
 
 .aat-img {
   background: url(../images/aat/aat1.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 

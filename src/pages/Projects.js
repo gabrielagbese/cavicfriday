@@ -171,7 +171,7 @@ function Projects() {
                         <div className='project-image ac-img'></div>
                         <div className='project-info'>
                             <p className='project-title'>Afrilabs Collaboration</p>
-                            <p className='project-brief'></p>
+                            <p className='project-brief'>The Afrilabs Annual Gathering united African tech hubs, startups, and innovators in Abuja to collaborate, and share knowledge, highlighting unity among member hubs supporting entrepreneurs.</p>
                             <button className='project-button' onClick={openAfd}>Read More</button>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='pd-text'>Artists and Tech is a program that seeks to fuse arts with new and emerging technology. It seeks to provide new types of art by using technological practices as tools. Aspiring artists collaborate with their technology counterparts to develop art works while solving existing gaps in the art infrastructure. Individuals pitch their ideas to, and seek collaborations within the artistic and technology community resulting in development/execution of new works of art. The projects developed under this alliance are then exhibited in CAVIC.</div>
+                            <div className='pd-text'>The 2021 Annual Gathering of Afrilabs in Abuja, Nigeria, was a momentous event that brought together tech hubs, startups, and innovators from across the African continent. This gathering served as a platform for collaboration, knowledge sharing, and showcasing the immense potential that Africa holds in the tech and innovation sectors. With representation from over 50 African countries, the event highlighted the unity and shared vision among African tech hubs and stakeholders. Afrilabs is a network organisation supporting Innovation Centers across African countries since 2011, founded upon the mission of building a community around the rapidly emerging technology hubs in Africa. Afrilabs currently has a membership of over 400 hubs spread across the African continent. These hubs serve as centres that provide support to African entrepreneurs, innovators, developers, and youths.</div>
                         </div>
                     </dialog>
                 </div>

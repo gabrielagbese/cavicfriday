@@ -92,7 +92,7 @@ const SpaceContent = {
             price1: "Daily: N75,000",
             price2: null,
         },
-        writeup: "The Coworking Space is more than just a place to sit and work; it's the heartbeat of innovation and collaboration. It serves as a melting pot of diverse ideas, backgrounds, and talents, creating an ecosystem where residents can co-create, brainstorm, and drive each other towards greater innovation. Within such an environment.",
+        writeup: "The Coworking Space is more than just a place to sit and work; it's the heartbeat of innovation and collaboration. It serves as a melting pot of diverse ideas, backgrounds, and talents, creating an ecosystem where residents can co-create, brainstorm, and drive each other towards greater innovation.",
         image: require('../images/reels/spaces/10.jpg').default,
         image2: null,
         image3: null,
