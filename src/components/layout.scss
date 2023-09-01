@@ -1654,10 +1654,13 @@ pre tt:after {
 
 .contact-social {
   display: flex;
+  width: 50%;
+  //border: thin solid red;
+  justify-content: space-evenly;
 }
 
 .social-item {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
 }
 

@@ -21,12 +21,12 @@ const IndexPage = () => {
   useEffect(() => {
     const hasDialogBeenShown = localStorage.getItem('dialogShown');
 
-    if (!hasDialogBeenShown) {
-      setTimeout(() => {
-        adDialogRef.current.showModal();
-        localStorage.setItem('dialogShown', 'true');
-      }, 1000);
-    }
+    // if (!hasDialogBeenShown) {
+    setTimeout(() => {
+      adDialogRef.current.showModal();
+      localStorage.setItem('dialogShown', 'true');
+    }, 1000);
+    // }
   }, []);
 
   return (
@@ -44,7 +44,7 @@ const IndexPage = () => {
       <main>
         <Home />
       </main>
-      {/* <dialog className='ad-dialog' ref={adDialogRef}>
+      <dialog className='ad-dialog' ref={adDialogRef}>
         <button className="ad-close" onClick={closeModal}>X</button>
         <div className="ad-center">
           <div className="showcase-banner"></div>
@@ -54,7 +54,7 @@ const IndexPage = () => {
           </p>
         </div>
         <button className="ad-more">Learn More</button>
-      </dialog> */}
+      </dialog>
     </>
   )
 

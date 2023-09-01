@@ -2201,10 +2201,14 @@ pre tt:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .social-item {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
 }
 
