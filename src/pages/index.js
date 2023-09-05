@@ -41,8 +41,11 @@ const IndexPage = () => {
         </div>
       </nav>
 
+      <main>
+        <Home />
+      </main>
       <dialog className='ad-dialog' ref={adDialogRef}>
-        <button className="ad-close" onClick={closeModal}>Xc</button>
+        <button className="ad-close" onClick={closeModal}>X</button>
         <div className="ad-center">
           <div className="showcase-banner"></div>
           <p className="showcase-text">As we stride into an era where art and technology converge in unparalleled ways, the CAVIC Festival stands as a significant landmark, amplifying this union. Slated for November 9th to 11th, envision this not just as a festival but as a vibrant nexus at the heart of CAVIC Hub.
@@ -52,11 +55,6 @@ const IndexPage = () => {
         </div>
         <button className="ad-more">Learn More</button>
       </dialog>
-
-      <main>
-        <Home />
-      </main>
-
     </>
   )
 
