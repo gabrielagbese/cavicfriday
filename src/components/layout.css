@@ -1218,6 +1218,7 @@ pre tt:after {
           align-items: center;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+  overflow-x: scroll;
 }
 
 .spaces-heading {
