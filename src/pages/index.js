@@ -41,9 +41,6 @@ const IndexPage = () => {
         </div>
       </nav>
 
-      <main>
-        <Home />
-      </main>
       <dialog className='ad-dialog' ref={adDialogRef}>
         <button className="ad-close" onClick={closeModal}>X</button>
         <div className="ad-center">
@@ -55,6 +52,11 @@ const IndexPage = () => {
         </div>
         <button className="ad-more">Learn More</button>
       </dialog>
+
+      <main>
+        <Home />
+      </main>
+
     </>
   )
 
