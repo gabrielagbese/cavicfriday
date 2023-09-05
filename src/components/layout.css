@@ -1561,7 +1561,7 @@ pre tt:after {
 @media (min-width: 0px) {
   .upcoming-title {
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     padding-left: 3%;
     margin-bottom: var(---space-4);
     margin-top: -2%;
@@ -1571,7 +1571,7 @@ pre tt:after {
 @media (min-width: 960px) {
   .upcoming-title {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-left: 3%;
     margin-top: 0%;
   }
@@ -1580,7 +1580,7 @@ pre tt:after {
 @media (min-width: 0px) {
   .upcoming-event {
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding-left: 5%;
     font-weight: 600;
     margin-bottom: var(---space-4);
@@ -1589,7 +1589,7 @@ pre tt:after {
 
 @media (min-width: 960px) {
   .upcoming-event {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     padding-left: 5%;
   }
 }
