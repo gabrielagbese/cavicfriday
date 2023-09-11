@@ -158,7 +158,7 @@ export default function Spaces() {
                     <div className='spaces-list' onClick={() => { readMore("chill") }}>
                         Chill Zone
                     </div>
-                    <div className='spaces-list blocked'>
+                    <div className='spaces-list '>
                         Library
                     </div>
                 </div>
@@ -201,6 +201,10 @@ export default function Spaces() {
                         <div className='space-card'>
                             <img src={SpacesContent.pics2} className='space-card-image' onClick={() => { readMore("gallery") }} draggable="false"></img>
                             <p className='space-card-name' onClick={() => { readMore("gallery") }}>Chill Space</p>
+                        </div>
+                        <div className='space-card'>
+                            <img src={SpacesContent.pics12} className='space-card-image' onClick={() => { readMore("library") }} draggable="false"></img>
+                            <p className='space-card-name' onClick={() => { readMore("library") }}>Library</p>
                         </div>
                         <div className='space-space'></div>
                     </div>

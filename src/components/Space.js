@@ -44,8 +44,8 @@ export default function Space(props) {
 					<Link to="/ContactNew" className="nav-item nav-item-about"><button className='enquiry-button'>Contact Us</button></Link>
 					<img className='space-detail-image' src={image}></img>
 					{image2 ? <img className='space-detail-image-long' src={image2}></img> : null}
-					{image3 ? <img className='space-detail-image' src={image3}></img> : null}
-					{image4 ? <img className='space-detail-image' src={image4}></img> : null}
+					{image3 ? <img className='space-detail-image-long' src={image3}></img> : null}
+					{image4 ? <img className='space-detail-image-long' src={image4}></img> : null}
 
 				</div>
 				<div className='space-right'>

@@ -1125,7 +1125,7 @@ pre tt:after {
   width: 100%;
   color: #c7c5c5;
   border-bottom: thin solid #fff4db2e;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   cursor: pointer;
@@ -1185,8 +1185,8 @@ pre tt:after {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 100% 50%;
-     object-position: 100% 50%;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .space-card-name {

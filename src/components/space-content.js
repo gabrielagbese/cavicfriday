@@ -110,6 +110,18 @@ const SpaceContent = {
         image3: null,
         image4: null,
     },
+    library: {
+        title: "Library",
+        price: {
+            price1: null,
+            price2: null,
+        },
+        writeup: "",
+        image: require('../images/reels/spaces/l3.png').default,
+        image2: require('../images/reels/spaces/l1.png').default,
+        image3: require('../images/reels/spaces/l6.png').default,
+        image4: null,
+    },
 }
 
 export default SpaceContent
