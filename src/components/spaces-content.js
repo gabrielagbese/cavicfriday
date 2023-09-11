@@ -1,5 +1,5 @@
 const SpacesContent = {
-    pics1: require('../images/reels/spaces/1.jpg').default,
+    pics1: require('../images/reels/events/12.jpg').default,
     pics2: require('../images/reels/spaces/2.jpg').default,
     pics3: require('../images/reels/spaces/3.jpg').default,
     pics4: require('../images/reels/spaces/4.jpg').default,
