@@ -2,6 +2,7 @@ import React from 'react'
 import qrvid1 from '../images/vid/qrvid1.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons'
+import "../components/layout.css"
 
 function qr1() {
     return (
