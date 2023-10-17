@@ -2177,3 +2177,46 @@ dialog::backdrop {
   background-size: cover;
   background-position: center;
 }
+
+.art-details {
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vid-container {
+  // scale: 0.5;
+  border: thin solid gray;
+}
+
+.art-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.artist-name {
+  font-size: 1.25rem;
+  //font-weight: 500;
+  color: white;
+}
+
+.ar-container {
+  font-size: 1.25rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.ar-sub-container {
+  font-size: 4rem;
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
