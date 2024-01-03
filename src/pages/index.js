@@ -13,21 +13,21 @@ import * as styles from "../components/index.module.css"
 
 const IndexPage = () => {
 
-  const adDialogRef = useRef(null)
-  function closeModal() {
-    adDialogRef.current.close()
-  }
+  // const adDialogRef = useRef(null)
+  // function closeModal() {
+  //   adDialogRef.current.close()
+  // }
 
-  useEffect(() => {
-    const hasDialogBeenShown = localStorage.getItem('dialogShown');
+  // useEffect(() => {
+  //   const hasDialogBeenShown = localStorage.getItem('dialogShown');
 
-    // if (!hasDialogBeenShown) {
-    setTimeout(() => {
-      adDialogRef.current.showModal();
-      localStorage.setItem('dialogShown', 'true');
-    }, 1000);
-    // }
-  }, []);
+  //   // if (!hasDialogBeenShown) {
+  //   setTimeout(() => {
+  //     adDialogRef.current.showModal();
+  //     localStorage.setItem('dialogShown', 'true');
+  //   }, 1000);
+  //   // }
+  // }, []);
 
   return (
     <>
