@@ -41,9 +41,9 @@ export default function Events() {
 			<div className='events-side'>
 				<p className='events-name'> Events</p>
 				<p className='event-text'>CAVIC pulls together resources within its network to organize exhibitions as well as host public information and arts appreciation events for the wider community in our spaces.</p>
-				<p className='upcoming-title'> Upcoming Event:</p>
-				<p className='upcoming-event'> Festival of Creativity & Technology</p>
-				<p className='upcoming-date'> 9th - 11th November 2023</p>
+				{/* <p className='upcoming-title'> Upcoming Event:</p> */}
+				{/* <p className='upcoming-event'> Festival of Creativity & Technology</p>
+				<p className='upcoming-date'> 9th - 11th November 2023</p> */}
 				<div className='calendar'>
 					{/* <ReactEmbeddedGoogleCalendar publicUrl="https://calendar.google.com/calendar/embed?src=cavicnigeriainfo%40gmail.com&ctz=UTC" /> */}
 				</div>
@@ -144,6 +144,19 @@ export default function Events() {
 					<div className='item-text'>
 						<div className='item-name'>
 							<p>Fashion</p>
+						</div>
+						<div className='item-button' onClick={() => eventMore("fashion")}>
+							<p>Read More</p>
+						</div>
+					</div>
+					<div className='item-image'>
+						<img src={require('../images/reels/events/14.jpg').default}></img>
+					</div>
+				</div>
+				<div className='event-item' onClick={() => eventMore("creative-showcase")}>
+					<div className='item-text'>
+						<div className='item-name'>
+							<p>Creative Showcase</p>
 						</div>
 						<div className='item-button' onClick={() => eventMore("fashion")}>
 							<p>Read More</p>
