@@ -38,7 +38,7 @@ const IndexPage = () => {
           <Link to="/AboutNew" className="nav-item nav-item-about">About</Link>
           <Link to="/Projects" className="nav-item nav-item-about">Projects</Link>
           <Link to="/ContactNew" className="nav-item nav-item-about">Contact</Link>
-        </div>
+        </div>s
       </nav>
 
       <main>

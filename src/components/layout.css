@@ -2500,7 +2500,7 @@ dialog::backdrop {
 
 @media (min-width: 960px) {
   .project-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
   }
 }
@@ -2595,7 +2595,7 @@ dialog::backdrop {
 
 @media (min-width: 960px) {
   .pd-name {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -2653,6 +2653,31 @@ dialog::backdrop {
 
 .aat5 {
   background: url(../images/aat/aat5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fest1 {
+  background: url(../images/fest/fest1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fest2 {
+  background: url(../images/fest/fest2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fest3 {
+  background: url(../images/fest/fest3.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.fest4 {
+  background: url(../images/fest/fest4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -2747,6 +2772,36 @@ dialog::backdrop {
   background-position: center;
 }
 
+.cp1 {
+  background: url(../images/cp/cp1.png);
+  background-size: cover;
+  background-position: top top;
+}
+
+.cp2 {
+  background: url(../images/ac/ac2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cp3 {
+  background: url(../images/ac/ac3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cp4 {
+  background: url(../images/ac/ac4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cp5 {
+  background: url(../images/ac/ac5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 960px) {
   .pd-text {
     width: 60%;
@@ -2829,6 +2884,18 @@ dialog::backdrop {
 
 .pd-ac {
   background: url(../images/ac/ac1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cp-img {
+  background: url(../images/cn.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.fest-img {
+  background: url(../images/fest/fest2.jpg);
   background-size: cover;
   background-position: center;
 }

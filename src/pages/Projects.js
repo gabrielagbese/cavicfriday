@@ -9,11 +9,15 @@ function Projects() {
     const afpRef = useRef(null);
     const mbwRef = useRef(null);
     const afdRef = useRef(null);
+    const cpRef = useRef(null);
+    const festRef = useRef(null);
 
     const aatWrapperRef = useRef(null);
     const afpWrapperRef = useRef(null);
     const mbWrapperRef = useRef(null);
     const acWrapperRef = useRef(null)
+    const cpWrapperRef = useRef(null)
+    const festWrapperRef = useRef(null);
 
     function scrollDiv(wrapper, amount) {
         wrapper.current.scrollLeft += wrapper.current.offsetWidth * amount;
@@ -48,6 +52,18 @@ function Projects() {
     }
     function closeAfd() {
         afdRef.current.close();
+    }
+    function openCp() {
+        cpRef.current.showModal();
+    }
+    function closeCp() {
+        cpRef.current.close();
+    }
+    function openFest() {
+        cpRef.current.showModal();
+    }
+    function closeFest() {
+        cpRef.current.close();
     }
 
     return (
@@ -198,8 +214,77 @@ function Projects() {
                             <div className='pd-text'>The 2021 Annual Gathering of Afrilabs in Abuja, Nigeria, was a momentous event that brought together tech hubs, startups, and innovators from across the African continent. This gathering served as a platform for collaboration, knowledge sharing, and showcasing the immense potential that Africa holds in the tech and innovation sectors. With representation from over 50 African countries, the event highlighted the unity and shared vision among African tech hubs and stakeholders. Afrilabs is a network organisation supporting Innovation Centers across African countries since 2011, founded upon the mission of building a community around the rapidly emerging technology hubs in Africa. Afrilabs currently has a membership of over 400 hubs spread across the African continent. These hubs serve as centres that provide support to African entrepreneurs, innovators, developers, and youths.</div>
                         </div>
                     </dialog>
+                    <div className='project-item'>
+                        <div className='project-image cp-img'></div>
+                        <div className='project-info'>
+                            <p className='project-title'>Creative Arts Showcase</p>
+                            <p className='project-brief'>Creative Arts Showcase is a collaboration with the British Council where we platform Abuja-based creatives</p>
+                            <button className='project-button' onClick={openCp}>Read More</button>
+                        </div>
+                    </div>
+
+                    <dialog className='project-dialog' ref={cpRef} >
+                        <button onClick={closeCp}>close</button>
+                        <div className='project-dialog-wrapper'>
+                            <div className='pd-name-img'>
+                                <p className='pd-name'>Creative Arts Showcase</p>
+                                <div className='pd-img'>
+                                    <div className='project-slider-wrapper' ref={cpWrapperRef}>
+                                        <div className='project-slider-item cp1'></div>
+                                        <div className='project-slider-item aat2'></div>
+                                        <div className='project-slider-item aat3'></div>
+                                        <div className='project-slider-item aat4'></div>
+                                        <div className='project-slider-item aat5'></div>
+                                    </div>
+                                    <div className='slide-buttons'>
+                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, 1)}>&gt;</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='pd-text'>Creative Arts Showcase is a collaboration with the British Council where we platform Abuja-based creatives</div>
+                        </div>
+
+                    </dialog>
+
+                    <div className='project-item'>
+                        <div className='project-image fest-img'></div>
+                        <div className='project-info'>
+                            <p className='project-title'>CAVIC Festival of Creativity & Technology</p>
+                            <p className='project-brief'>An experience where technology met the imagination of artists. From digital art installations to tech-driven performances.</p>
+                            <button className='project-button' onClick={openCp}>Read More</button>
+                        </div>
+                    </div>
+
+                    <dialog className='project-dialog' ref={cpRef} >
+                        <button onClick={closeCp}>close</button>
+                        <div className='project-dialog-wrapper'>
+                            <div className='pd-name-img'>
+                                <p className='pd-name'>CAVIC Festival of Creativity & Technology</p>
+                                <div className='pd-img'>
+                                    <div className='project-slider-wrapper' ref={cpWrapperRef}>
+                                        <div className='project-slider-item fest1'></div>
+                                        <div className='project-slider-item fest2'></div>
+                                        <div className='project-slider-item fest3'></div>
+                                        <div className='project-slider-item fest4'></div>
+                                        <div className='project-slider-item fest5'></div>
+                                    </div>
+                                    <div className='slide-buttons'>
+                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, 1)}>&gt;</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='pd-text'>
+                                The CAVIC Festival of Creativity and Technology opened and invited you to witness a groundbreaking fusion of art and technology. The festival was not just an event; it was a celebration of innovation, creativity, and the endless possibilities that emerged when these two worlds collided. Attendees joined us on a journey where cutting-edge technology met the boundless imagination of artists. From digital art installations to tech-driven performances, every piece you saw was a testament to the power of creative collaboration.</div>
+                        </div>
+
+                    </dialog>
+
                 </div>
+
             </div>
+
         </>
     )
 }
