@@ -227,7 +227,7 @@ function Projects() {
                         <button onClick={closeCp}>close</button>
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
-                                <p className='pd-name'>Creative Arts Showcase</p>%%
+                                <p className='pd-name'>Creative Arts Showcase</p>
                                 <div className='pd-img'>
                                     <div className='project-slider-wrapper' ref={cpWrapperRef}>
                                         <div className='project-slider-item cp1'></div>
