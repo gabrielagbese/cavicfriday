@@ -227,7 +227,7 @@ function Projects() {
                         <button onClick={closeCp}>close</button>
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
-                                <p className='pd-name'>Creative Arts Showcase</p>
+                                <p className='pd-name'>Creative Arts Showcase</p>%%
                                 <div className='pd-img'>
                                     <div className='project-slider-wrapper' ref={cpWrapperRef}>
                                         <div className='project-slider-item cp1'></div>
@@ -252,11 +252,11 @@ function Projects() {
                         <div className='project-info'>
                             <p className='project-title'>CAVIC Festival of Creativity & Technology</p>
                             <p className='project-brief'>An experience where technology met the imagination of artists. From digital art installations to tech-driven performances.</p>
-                            <button className='project-button' onClick={openCp}>Read More</button>
+                            <button className='project-button' onClick={openFest}>Read More</button>
                         </div>
                     </div>
 
-                    <dialog className='project-dialog' ref={cpRef} >
+                    <dialog className='project-dialog' ref={festRef} >
                         <button onClick={closeCp}>close</button>
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
@@ -270,8 +270,8 @@ function Projects() {
                                         <div className='project-slider-item fest5'></div>
                                     </div>
                                     <div className='slide-buttons'>
-                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, -1)}>&lt;</button>
-                                        <button className='slide-button' onClick={() => scrollDiv(cpWrapperRef, 1)}>&gt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(festWrapperRef, -1)}>&lt;</button>
+                                        <button className='slide-button' onClick={() => scrollDiv(festWrapperRef, 1)}>&gt;</button>
                                     </div>
                                 </div>
                             </div>
