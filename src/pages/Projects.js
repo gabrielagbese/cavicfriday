@@ -262,7 +262,7 @@ function Projects() {
                             <div className='pd-name-img'>
                                 <p className='pd-name'>CAVIC Festival of Creativity & Technology</p>
                                 <div className='pd-img'>
-                                    <div className='project-slider-wrapper' ref={cpWrapperRef}>
+                                    <div className='project-slider-wrapper' ref={festWrapperRef}>
                                         <div className='project-slider-item fest1'></div>
                                         <div className='project-slider-item fest2'></div>
                                         <div className='project-slider-item fest3'></div>
