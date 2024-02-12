@@ -2,6 +2,7 @@ import React from 'react'
 import { useRef } from 'react'
 import { Slide } from 'react-slideshow-image';
 import { Link } from "gatsby"
+import Kst6 from "../images/fest/Kst61.mp4"
 
 function Projects() {
 
@@ -60,10 +61,10 @@ function Projects() {
         cpRef.current.close();
     }
     function openFest() {
-        cpRef.current.showModal();
+        festRef.current.showModal();
     }
     function closeFest() {
-        cpRef.current.close();
+        festRef.current.close();
     }
 
     return (
@@ -257,7 +258,7 @@ function Projects() {
                     </div>
 
                     <dialog className='project-dialog' ref={festRef} >
-                        <button onClick={closeCp}>close</button>
+                        <button onClick={closeFest}>close</button>
                         <div className='project-dialog-wrapper'>
                             <div className='pd-name-img'>
                                 <p className='pd-name'>CAVIC Festival of Creativity & Technology</p>
@@ -267,7 +268,12 @@ function Projects() {
                                         <div className='project-slider-item fest2'></div>
                                         <div className='project-slider-item fest3'></div>
                                         <div className='project-slider-item fest4'></div>
-                                        <div className='project-slider-item fest5'></div>
+                                        <div className='project-slider-item fest5'>
+                                            <video className="video-background" autoPlay loop muted>
+                                                <source src={Kst6} type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
                                     </div>
                                     <div className='slide-buttons'>
                                         <button className='slide-button' onClick={() => scrollDiv(festWrapperRef, -1)}>&lt;</button>

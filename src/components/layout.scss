@@ -2030,11 +2030,19 @@ dialog::backdrop {
   background-position: center;
 }
 
-// .fest5 {
-//   background: url(../images/fest/fest5.jpg);
-//   background-size: cover;
-//   background-position: center;
-// }
+.fest5 {
+  background: url(../images/fest/kst61.mp4);
+  background-size: cover;
+  background-position: center;
+}
+.video-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  object-fit: cover;
+}
 
 .afp1 {
   background: url(../images/afp/afp1.jpg);
