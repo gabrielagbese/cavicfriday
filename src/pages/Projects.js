@@ -269,10 +269,20 @@ function Projects() {
                                         <div className='project-slider-item fest3'></div>
                                         <div className='project-slider-item fest4'></div>
                                         <div className='project-slider-item fest5'>
-                                            <video className="video-background" autoPlay loop muted>
+                                            {/* <video className="video-background" autoPlay loop muted>
                                                 <source src={Kst6} type="video/mp4" />
                                                 Your browser does not support the video tag.
-                                            </video>
+                                            </video> */}
+                                            <iframe
+                                                width="560"  // Adjust width and height as needed
+                                                height="315"
+                                                src="https://youtube.com/shorts/ne24_mjE7QY"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen
+                                            ></iframe>
+
                                         </div>
                                     </div>
                                     <div className='slide-buttons'>
