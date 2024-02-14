@@ -274,9 +274,9 @@ function Projects() {
                                                 Your browser does not support the video tag.
                                             </video> */}
                                             <iframe
-                                                width="560"  // Adjust width and height as needed
-                                                height="315"
-                                                src="https://youtube.com/shorts/ne24_mjE7QY"
+                                                width="500"  // Adjust width and height as needed
+                                                height="400"
+                                                src="https://youtube.com/embed/ne24_mjE7QY"
                                                 title="YouTube video player"
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
