@@ -276,7 +276,7 @@ function Projects() {
                                             <iframe
                                                 width="500"  // Adjust width and height as needed
                                                 height="400"
-                                                src="https://youtube.com/embed/ne24_mjE7QY"
+                                                src="https://youtube.com/embed/fnnRLEuBPIg"
                                                 title="YouTube video player"
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
