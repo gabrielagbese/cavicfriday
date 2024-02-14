@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef } from 'react'
 import { Slide } from 'react-slideshow-image';
 import { Link } from "gatsby"
-import Kst6 from "../images/fest/Kst61.mp4"
+// import Kst6 from "../images/fest/Kst61.mp4"
 
 function Projects() {
 
@@ -292,7 +292,7 @@ function Projects() {
                                 </div>
                             </div>
                             <div className='pd-text'>
-                                The CAVIC Festival of Creativity and Technology opened and invited you to witness a groundbreaking fusion of art and technology. The festival was not just an event; it was a celebration of innovation, creativity, and the endless possibilities that emerged when these two worlds collided. Attendees joined us on a journey where cutting-edge technology met the boundless imagination of artists. From digital art installations to tech-driven performances, every piece you saw was a testament to the power of creative collaboration.</div>
+                                The CAVIC Festival of Creativity and Technology opened and invited guests to witness a groundbreaking fusion of art and technology. The festival was not just an event; it was a celebration of innovation, creativity, and the endless possibilities that emerged when these two worlds collided. Attendees joined us on a journey where cutting-edge technology met the boundless imagination of artists. From digital art installations to tech-driven performances, every piece on display was a testament to the power of creative collaboration.</div>
                         </div>
 
                     </dialog>
