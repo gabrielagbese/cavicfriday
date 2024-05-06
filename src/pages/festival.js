@@ -1,16 +1,16 @@
 import React from 'react'
 import { useEffect } from 'react'
 
-function festival() {
+function Festival() {
 
-    // useEffect(() => {
-    //     window.location.replace('https://www.google.com')
-    // }, [])
-    window.location.replace('https://ecorevived.com/')
+    useEffect(() => {
+        window.location.replace('https://www.google.com')
+    }, [])
+
 
     return (
         <div></div>
     )
 }
 
-export default festival
+export default Festival
