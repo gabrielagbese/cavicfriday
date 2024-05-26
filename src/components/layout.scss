@@ -2030,6 +2030,12 @@ dialog::backdrop {
   background-position: center;
 }
 
+iframe {
+  width: 100vw;
+  height: 99.3vh;
+  overflow: hidden;
+}
+
 .ifr {
   width: 100vw;
   height: 99.3vh;
