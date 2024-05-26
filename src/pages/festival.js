@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 function Festival() {
 
     useEffect(() => {
-        window.location.replace('https://www.ecorevived.com')
+        <iframe src='https://www.ecorevived.com' className='ifr'>a</iframe>
     }, [])
 
 
