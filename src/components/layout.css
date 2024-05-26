@@ -2682,8 +2682,13 @@ dialog::backdrop {
   background-position: center;
 }
 
+.ifr {
+  width: 100vw;
+  height: 99.3vh;
+  overflow: hidden;
+}
+
 .fest5 {
-  background: url(../images/fest/kst61.mp4);
   background-size: cover;
   background-position: center;
 }

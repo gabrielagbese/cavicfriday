@@ -4,12 +4,12 @@ import { useEffect } from 'react'
 function Festival() {
 
     useEffect(() => {
-        <iframe src='https://www.ecorevived.com' className='ifr'>a</iframe>
+
     }, [])
 
 
     return (
-        <div></div>
+        <iframe src='https://ecorevived.com/' className='ifr'>a</iframe>
     )
 }
 

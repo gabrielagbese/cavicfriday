@@ -2032,7 +2032,9 @@ dialog::backdrop {
 
 .ifr {
   width: 100vw;
-  height: 100vh;
+  height: 99.3vh;
+  overflow: hidden;
+  //border: 1px solid #000 !important;
 }
 
 .fest5 {
