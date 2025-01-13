@@ -33,6 +33,11 @@ const Home = ({ children }) => {
 					snap: "labels",
 					scrub: true,
 					end: "+=1150%",
+					// onLeave: function (self) {
+					// 	self.scroll(self.start);
+					// 	self.disable()
+					// 	self.animation.progress(1)
+					// },
 				}
 			});
 			tl.to(".section-double", { xPercent: -40 })
@@ -40,8 +45,9 @@ const Home = ({ children }) => {
 			tl.to(".test3", { yPercent: -202 })
 			tl.to(".card1", { yPercent: -100 })
 			tl.to(".card2", { yPercent: -200 })
-			tl.to(".events-list", { yPercent: -275 })
-			tl.to(".card3", { yPercent: -322 })
+			tl.to(".events-list", { yPercent: -300 })
+			// tl.to(".card3", { yPercent: -322 })
+			//tl.to(".section-rest", { yPercent: -90 })
 		})
 
 	});

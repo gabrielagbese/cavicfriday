@@ -333,6 +333,7 @@ pre tt:after {
   }
   @include lg {
     height: 90vh;
+    overflow: auto;
   }
 }
 

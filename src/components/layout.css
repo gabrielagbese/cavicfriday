@@ -403,6 +403,7 @@ pre tt:after {
 @media (min-width: 960px) {
   .events-section {
     height: 90vh;
+    overflow: auto;
   }
 }
 
