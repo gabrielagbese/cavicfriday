@@ -57,7 +57,7 @@ const SpaceContent = {
             price2: null,
         },
         writeup: "Our events/workshop space covers 56 m² and has capacity to sit up to 70-80 persons and is ideal for hands-on training, closed door presentations and social events such as book club activities, public discourse, lectures, film screenings etc.Skill acquisition and refinement are continuous processes. The Training Space is a tangible manifestation of CAVIC's commitment to lifelong learning. Whether it's a workshop on digital tools, a masterclass on African art forms, or a course on entrepreneurship, this space ensures that hum members are continuously equipped with skills that enhance their journey.",
-        image: require('../images/workshopimg.jpg').default,
+        image: require('../images/workshopimg.JPG').default,
         image2: null,
         image3: null,
         image4: null,
