@@ -70,7 +70,7 @@ const Home = ({ children }) => {
 				</section>
 				<section className="section-rest card">
 					<div className="section card card1">
-						<Spaces />
+						{/* <Spaces /> */}
 					</div>
 					<div className="events-section card card2">
 						<Events />
